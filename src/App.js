@@ -501,10 +501,10 @@ function App() {
             >
               <img
                 src={neonPortrait}
-                style={{
-                  width: size.width > 525 ? '525px' : '350px',
-                  height: size.width > 525 ? '600px' : '400px',
-                }}
+                // style={{
+                //   width: size.width > 525 ? '525px' : '350px',
+                //   height: size.width > 525 ? '600px' : '400px',
+                // }}
                 alt=''
               />
             </div>
@@ -677,7 +677,7 @@ function App() {
               skill.current[4] = el;
             }}
           >
-            <div className='card'>
+            <div className='card' id='scss'>
               <div className='imgBox'>
                 <img src={sass} alt='' />
               </div>
@@ -1093,7 +1093,7 @@ function App() {
                 project.current[1] = el;
               }}
             >
-              <Carousel
+               {size.width > 520 ? (<Carousel
                 easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
                 transitionMs={700}
                 itemsToShow={1}
@@ -1229,7 +1229,8 @@ function App() {
                     alt=''
                   />
                 </div>
-              </Carousel>
+              </Carousel>): null}
+              
             </div>
           </div>
           <div className='carousel' style={{ flexWrap: 'wrap-reverse' }}>
@@ -1238,7 +1239,7 @@ function App() {
                 project.current[3] = el;
               }}
             >
-              <Carousel
+              {size.width > 520 ? (<Carousel
                 easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
                 transitionMs={700}
                 itemsToShow={1}
@@ -1330,7 +1331,8 @@ function App() {
                     alt=''
                   />
                 </div>
-              </Carousel>
+              </Carousel>): null}
+              
             </div>
             <div
               className='introductionField'
@@ -1593,7 +1595,7 @@ function App() {
                 project.current[5] = el;
               }}
             >
-              <Carousel
+              {size.width > 520 ? (<Carousel
                 easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
                 transitionMs={700}
                 itemsToShow={1}
@@ -1685,7 +1687,8 @@ function App() {
                     alt=''
                   />
                 </div>
-              </Carousel>
+              </Carousel>): (null)}
+              
             </div>
             <div className='carousel' style={{ flexWrap: 'wrap-reverse' }}>
               <div
@@ -1694,7 +1697,7 @@ function App() {
                 }}
               >
                 <div className='test'>
-                <Carousel
+                  {size.width> 520 ? ( <Carousel
                   easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
                   transitionMs={700}
                   itemsToShow={1}
@@ -1786,7 +1789,8 @@ function App() {
                       alt=''
                     />
                   </div>
-                </Carousel>
+                </Carousel>) : null}
+               
                 </div>
               </div>
               <div

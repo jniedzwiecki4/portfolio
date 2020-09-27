@@ -35,6 +35,13 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 500px) {
+  .wrapper {
+    
+    width: auto;
+   
+  }
+}
 p {
   float: left;
   text-align: left;
@@ -188,6 +195,11 @@ nav {
   color: white;
   font-family: 'Lato', sans-serif;
 }
+@media screen and (max-width: 800px) {
+  .textbox {
+    height: auto;
+  }
+}
 
 h1 {
   margin: 0;
@@ -294,6 +306,81 @@ h1 {
   z-index: 1;
   mix-blend-mode: color;
   animation: animate 3s linear infinite;
+}
+
+@media screen and (max-width: 430px) {
+  .containerSkill {
+    width: 290px;
+    height: auto;
+  }
+  .containerSkill .card .imgBox {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* .imgBox img{
+    width: auto;
+    height: 350px;
+  } */
+}
+@media screen and (max-width: 350px) {
+  .containerSkill {
+    width: 220px;
+    height: auto;
+  }
+  .containerSkill .card .imgBox {
+    width: 150px;
+    height: 150px;
+    left: 10px;
+  }
+  .containerSkill .card  {
+    width: 200px;
+    height: 200px;
+  }
+  .containerSkill .card h2{
+    font-size: 1em;
+  }
+  .containerSkill .card:hover {
+    height: auto;
+  }
+  /* .imgBox img{
+    width: auto;
+    height: 350px;
+  } */
+}
+.imgbox img{
+  width: 525px;
+  height: 600px;
+}
+@media screen and (max-width: 525px) {
+  .imgbox img{
+    width: 350px;
+    height: 400px;
+  }
+  /* .imgBox img{
+    width: auto;
+    height: 350px;
+  } */
+}
+@media screen and (max-width: 380px) {
+  .imgbox img{
+    width: 250px;
+    height: 300px;
+  }
+  /* .imgBox img{
+    width: auto;
+    height: 350px;
+  } */
+}
+@media screen and (max-width: 380px) {
+  .imgbox {
+    width: 200px;
+    height: auto;
+  }
+  /* .imgBox img{
+    width: auto;
+    height: 350px;
+  } */
 }
 
 @keyframes animate {
@@ -473,11 +560,30 @@ ul li a:hover::before {
     font-size: 2em;
   }
 }
+@media screen and (max-width: 400px) {
+  #contact {
+    font-size: 3em;
+  }
+
+  #skills {
+    font-size: 5em;
+  }
+
+  #projects {
+    font-size: 1.7em;
+  }
+}
 
 @media screen and (max-width: 540px) {
   .a {
     padding: 15px 15px;
     font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .a {
+    padding: 10px 10px;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 1580px) {
@@ -581,6 +687,5 @@ ul li a:hover::before {
   }
 }
 
-.test{
-  
+.test {
 }
