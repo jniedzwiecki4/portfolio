@@ -37,9 +37,7 @@
 
 @media screen and (max-width: 500px) {
   .wrapper {
-    
     width: auto;
-   
   }
 }
 p {
@@ -333,11 +331,11 @@ h1 {
     height: 150px;
     left: 10px;
   }
-  .containerSkill .card  {
+  .containerSkill .card {
     width: 200px;
     height: 200px;
   }
-  .containerSkill .card h2{
+  .containerSkill .card h2 {
     font-size: 1em;
   }
   .containerSkill .card:hover {
@@ -348,12 +346,12 @@ h1 {
     height: 350px;
   } */
 }
-.imgbox img{
+.imgbox img {
   width: 525px;
   height: 600px;
 }
 @media screen and (max-width: 525px) {
-  .imgbox img{
+  .imgbox img {
     width: 350px;
     height: 400px;
   }
@@ -363,7 +361,7 @@ h1 {
   } */
 }
 @media screen and (max-width: 380px) {
-  .imgbox img{
+  .imgbox img {
     width: 250px;
     height: 300px;
   }
@@ -428,12 +426,18 @@ h1 {
 ul {
   position: relative;
   display: flex;
+  
 }
 ul li {
   position: relative;
   list-style: none;
   margin: 20px;
   cursor: pointer;
+}
+@media screen and (max-width: 670px) {
+  ul {
+    padding-inline-start: 0px;
+  }
 }
 
 ul li a {
@@ -491,7 +495,7 @@ ul li a:hover::before {
 
 .introductionField {
   width: 500px;
-  height: 600px;
+  height: 590px;
   color: white;
   text-align: center;
   box-shadow: 0 0 1px #8ed3ff, 0 0 3px #8ed3ff, 0 0 10px #8ed3ff,
@@ -507,7 +511,13 @@ ul li a:hover::before {
     0 40px 2px 2px rgba(255, 255, 255, 0.01),
     0 400px 300px 20px rgb(142, 211, 255, 1);
 }
-
+@media screen and (max-width: 420px) {
+  .shadowCopyright {
+    box-shadow: 0 0 1px 1px rgb(142, 211, 255, 0.1),
+    0 40px 2px 2px rgba(255, 255, 255, 0.01),
+    0 290px 300px 20px rgb(142, 211, 255, 1);
+  }
+}
 .shadowCopyrightBox {
   background-color: white;
   box-shadow: 0 0 1px #8ed3ff, 0 0 3px #8ed3ff, 0 0 10px #8ed3ff,
@@ -588,7 +598,7 @@ ul li a:hover::before {
 }
 @media screen and (max-width: 1580px) {
   .introductionField {
-    height: auto;
+    height: 590px;
     width: 500px;
   }
 }

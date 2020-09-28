@@ -167,8 +167,8 @@ function App() {
           trigger: theme.current[0],
           scrub: 1,
           toggleActions: 'restart pause resume none',
-          start: 'top 50%',
-          end: 'top 50%',
+          start: 'top 80%',
+          end: 'top 75%',
         },
       }
     );
@@ -186,8 +186,8 @@ function App() {
           trigger: theme.current[1],
           scrub: 1,
           toggleActions: 'restart pause resume none',
-          start: 'top 50%',
-          end: 'top 50%',
+          start: 'top 80%',
+          end: 'top 75%',
         },
       }
     );
@@ -205,8 +205,8 @@ function App() {
           trigger: theme.current[2],
           scrub: 1,
           toggleActions: 'restart pause resume none',
-          start: 'top 50%',
-          end: 'top 50%',
+          start: 'top 80%',
+          end: 'top 75%',
         },
       }
     );
@@ -224,8 +224,9 @@ function App() {
           trigger: theme.current[3],
           scrub: 1,
           toggleActions: 'restart pause resume none',
-          start: 'center 50%',
-          end: 'top 50%',
+          start: 'top 80%',
+          end: 'top 75%',
+
         },
       }
     );
@@ -243,8 +244,8 @@ function App() {
           trigger: theme.current[4],
           scrub: 1,
           toggleActions: 'restart pause resume none',
-          start: 'top 50%',
-          end: 'top 50%',
+          start: 'top 80%',
+          end: 'top 75%',
         },
       }
     );
