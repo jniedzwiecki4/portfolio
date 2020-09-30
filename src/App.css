@@ -180,7 +180,7 @@ nav {
 
 .imgbox {
   opacity: 1;
-  height: 75vh;
+  height: auto;
   width: 500px;
   margin-right: 25px;
 }
@@ -502,6 +502,7 @@ ul li a:hover::before {
     0 0 10px #8ed3ff;
   margin: 20px;
   padding: 5px;
+  font-size: initial;
 }
 
 .shadowCopyright {
@@ -584,16 +585,22 @@ ul li a:hover::before {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 680px) {
   .a {
     padding: 15px 15px;
     font-size: 1.3em;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 510px) {
   .a {
     padding: 10px 10px;
     font-size: 1em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .a {
+    padding: 5px 5px;
+    font-size: 0.85em;
   }
 }
 @media screen and (max-width: 1580px) {
@@ -602,7 +609,7 @@ ul li a:hover::before {
     width: 500px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
   .introductionField {
     height: auto;
     width: auto;

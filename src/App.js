@@ -38,6 +38,15 @@ import stripe from './images/stripe.png';
 import semanticUI from './images/semanticUI.png';
 import typescript from './images/typescript.png';
 import reactNative from './images/reactNative.png';
+import mongodb from './images/mongodb.png';
+import express from './images/express.png'
+import freelancer1 from './images/projects/Freelancer/front.png'
+import freelancer2 from './images/projects/Freelancer/front2.png'
+import freelancer3 from './images/projects/Freelancer/dashboard.png'
+import freelancer4 from './images/projects/Freelancer/freelancers.png'
+import freelancer5 from './images/projects/Freelancer/offerts.png'
+import freelancer6 from './images/projects/Freelancer/signin.png'
+import freelancer7 from './images/projects/Freelancer/signup.png'
 
 import gsap from 'gsap';
 import {
@@ -226,7 +235,6 @@ function App() {
           toggleActions: 'restart pause resume none',
           start: 'top 80%',
           end: 'top 75%',
-
         },
       }
     );
@@ -461,7 +469,7 @@ function App() {
           <a
             className='a'
             href='#projects'
-            style={{ marginRight: '15px' }}
+            
             ref={(el) => {
               navTrigger.current[2] = el;
             }}
@@ -471,6 +479,21 @@ function App() {
             <span></span>
             <span></span>
             Projects
+          </a>
+          <a
+            className='a'
+            href='#contact'
+            id='navAboutMe'
+            style={{ marginRight: '15px' }}
+            ref={(el) => {
+              navTrigger.current[0] = el;
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Contact
           </a>
         </nav>
 
@@ -521,20 +544,23 @@ function App() {
                 to make it look better, so I started to learn front end
                 technologies. After a while I realized that making websites and
                 learning everything that is assosiated to it, is much more
-                interesting than my previous work. My amature 'career' as web developer
-                started two years ago with writing plugins and custom themes in
-                Wordpress CMS. I wanted to know more, so after learning JQuery,
-                I switched to another front end framework React which I use
-                currently in my projects. Since January 2019 I continously
-                broaden my knowledge in backend and front end technologies. My
-                aim is to become a full-stack developer in a future.{' '}
+                interesting than my previous work. My amature 'career' as web
+                developer started two years ago with writing plugins and custom
+                themes in Wordpress CMS. I wanted to know more, so after
+                learning JQuery, I switched to another front end framework React
+                which I use currently in my projects. Since January 2019 I
+                continously broaden my knowledge in backend and front end
+                technologies. My aim is to become a full-stack developer in a
+                future.{' '}
               </p>
               <p>
                 Beside, learning in college and writing websites I am passionate
                 about olympic weightlifting and powerlifting. I like learning
                 foreign languages (currently Spanish, which I practice until
                 middle school), but also i cut my teeth on Russian and German.
-                In free time I try my hand at photography and drawing art, watching movies and read a lot of books about theorethical physics and philosophy of science.
+                In free time I try my hand at photography and drawing art,
+                watching movies and read a lot of books about theorethical
+                physics and philosophy of science.
               </p>
             </div>
           </div>
@@ -878,7 +904,7 @@ function App() {
         </div>
 
         <div
-          className='slide five'
+          className='slide five '
           id='projects'
           ref={(el) => {
             navTriggerBox.current[2] = el;
@@ -958,7 +984,7 @@ function App() {
                 >
                   Technologies:
                 </div>
-                <div className="gridSkill">
+                <div className='gridSkill'>
                   <div className='containerSkill2' style={{ width: '55px' }}>
                     <div className='card2'>
                       <div className='imgBox2'>
@@ -1094,144 +1120,145 @@ function App() {
                 project.current[1] = el;
               }}
             >
-               {size.width > 520 ? (<Carousel
-                easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
-                transitionMs={700}
-                itemsToShow={1}
-                pagination={false}
-                //enableAutoPlay
-                //autoPlaySpeed={5500}
-                style={{
-                  backgroundColor: ' black',
-                  width:
-                    size.width > 950
-                      ? '900px'
-                      : size.width > 700
-                      ? '650px'
-                      : size.width > 520
-                      ? '500px'
-                      : '350px',
-                  height:
-                    size.width > 950
-                      ? '600px'
-                      : size.width > 700
-                      ? '450px'
-                      : '300px',
-                  margin: '20px',
-                }}
-              >
-                <div>
-                  <img
-                    src={front}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt='front'
-                  />
-                </div>
-                <div>
-                  <img
-                    src={shop}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt=''
-                  />
-                </div>
-                <div>
-                  <img
-                    src={contact}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt=''
-                  />
-                </div>
-                <div>
-                  <img
-                    src={signin}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt=''
-                  />
-                </div>
-                <div>
-                  <img
-                    src={payment}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt=''
-                  />
-                </div>
-              </Carousel>): null}
-              
+              {size.width > 520 ? (
+                <Carousel
+                  easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
+                  transitionMs={700}
+                  itemsToShow={1}
+                  pagination={false}
+                  //enableAutoPlay
+                  //autoPlaySpeed={5500}
+                  style={{
+                    backgroundColor: ' black',
+                    width:
+                      size.width > 950
+                        ? '900px'
+                        : size.width > 700
+                        ? '650px'
+                        : size.width > 520
+                        ? '500px'
+                        : '350px',
+                    height:
+                      size.width > 950
+                        ? '600px'
+                        : size.width > 700
+                        ? '450px'
+                        : '300px',
+                    margin: '20px',
+                  }}
+                >
+                  <div>
+                    <img
+                      src={front}
+                      style={{
+                        width:
+                          size.width > 950
+                            ? '750px'
+                            : size.width > 700
+                            ? '500px'
+                            : size.width > 520
+                            ? '400px'
+                            : '200px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                      }}
+                      alt='front'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={shop}
+                      style={{
+                        width:
+                          size.width > 950
+                            ? '750px'
+                            : size.width > 700
+                            ? '500px'
+                            : size.width > 520
+                            ? '400px'
+                            : '200px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                      }}
+                      alt=''
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={contact}
+                      style={{
+                        width:
+                          size.width > 950
+                            ? '750px'
+                            : size.width > 700
+                            ? '500px'
+                            : size.width > 520
+                            ? '400px'
+                            : '200px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                      }}
+                      alt=''
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={signin}
+                      style={{
+                        width:
+                          size.width > 950
+                            ? '750px'
+                            : size.width > 700
+                            ? '500px'
+                            : size.width > 520
+                            ? '400px'
+                            : '200px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                      }}
+                      alt=''
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={payment}
+                      style={{
+                        width:
+                          size.width > 950
+                            ? '750px'
+                            : size.width > 700
+                            ? '500px'
+                            : size.width > 520
+                            ? '400px'
+                            : '200px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                      }}
+                      alt=''
+                    />
+                  </div>
+                </Carousel>
+              ) : null}
             </div>
           </div>
           <div className='carousel' style={{ flexWrap: 'wrap-reverse' }}>
@@ -1240,100 +1267,101 @@ function App() {
                 project.current[3] = el;
               }}
             >
-              {size.width > 520 ? (<Carousel
-                easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
-                transitionMs={700}
-                itemsToShow={1}
-                pagination={false}
-                //enableAutoPlay
-                //autoPlaySpeed={5500}
-                style={{
-                  backgroundColor: ' black',
-                  width:
-                    size.width > 950
-                      ? '900px'
-                      : size.width > 700
-                      ? '650px'
-                      : size.width > 520
-                      ? '500px'
-                      : '350px',
-                  height:
-                    size.width > 950
-                      ? '600px'
-                      : size.width > 700
-                      ? '450px'
-                      : '300px',
-                  margin: '20px',
-                }}
-              >
-                <div>
-                  <img
-                    src={chat}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt='front'
-                  />
-                </div>
-                <div>
-                  <img
-                    src={login}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt=''
-                  />
-                </div>
-                <div>
-                  <img
-                    src={register}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt=''
-                  />
-                </div>
-              </Carousel>): null}
-              
+              {size.width > 520 ? (
+                <Carousel
+                  easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
+                  transitionMs={700}
+                  itemsToShow={1}
+                  pagination={false}
+                  //enableAutoPlay
+                  //autoPlaySpeed={5500}
+                  style={{
+                    backgroundColor: ' black',
+                    width:
+                      size.width > 950
+                        ? '900px'
+                        : size.width > 700
+                        ? '650px'
+                        : size.width > 520
+                        ? '500px'
+                        : '350px',
+                    height:
+                      size.width > 950
+                        ? '600px'
+                        : size.width > 700
+                        ? '450px'
+                        : '300px',
+                    margin: '20px',
+                  }}
+                >
+                  <div>
+                    <img
+                      src={chat}
+                      style={{
+                        width:
+                          size.width > 950
+                            ? '750px'
+                            : size.width > 700
+                            ? '500px'
+                            : size.width > 520
+                            ? '400px'
+                            : '200px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                      }}
+                      alt='front'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={login}
+                      style={{
+                        width:
+                          size.width > 950
+                            ? '750px'
+                            : size.width > 700
+                            ? '500px'
+                            : size.width > 520
+                            ? '400px'
+                            : '200px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                      }}
+                      alt=''
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={register}
+                      style={{
+                        width:
+                          size.width > 950
+                            ? '750px'
+                            : size.width > 700
+                            ? '500px'
+                            : size.width > 520
+                            ? '400px'
+                            : '200px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                      }}
+                      alt=''
+                    />
+                  </div>
+                </Carousel>
+              ) : null}
             </div>
             <div
               className='introductionField'
@@ -1347,8 +1375,10 @@ function App() {
                 storing data, I used local storage, but it wasn't the best way
                 to handle data, so I rewrote it to redux. Current version of app
                 is storing data in Realtime Database and Storage from Firebase.
-                It also use Firebase Authentication. For frontend I used React
-                Semantic UI framework.Works only on desktop and tablet.{' '}
+                App also use Firebase Authentication. For frontend I have used
+                React Semantic UI framework.Basic fuctionalities of this site
+                are: sending messages, images, changing color themes and more!
+                Works only on desktop and tablet.{' '}
                 <div
                   style={{
                     fontSize: '20px',
@@ -1358,7 +1388,7 @@ function App() {
                 >
                   Technologies:
                 </div>
-                <div className="gridSkill">
+                <div className='gridSkill'>
                   <div className='containerSkill2' style={{ width: '55px' }}>
                     <div className='card2'>
                       <div className='imgBox2'>
@@ -1485,8 +1515,7 @@ function App() {
                 >
                   Technologies:
                 </div>
-
-                <div className="gridSkill">
+                <div className='gridSkill'>
                   <div className='containerSkill2' style={{ width: '55px' }}>
                     <div className='card2'>
                       <div className='imgBox2'>
@@ -1596,109 +1625,8 @@ function App() {
                 project.current[5] = el;
               }}
             >
-              {size.width > 520 ? (<Carousel
-                easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
-                transitionMs={700}
-                itemsToShow={1}
-                pagination={false}
-                //enableAutoPlay
-                //autoPlaySpeed={5500}
-                style={{
-                  backgroundColor: ' black',
-                  width:
-                    size.width > 950
-                      ? '900px'
-                      : size.width > 700
-                      ? '650px'
-                      : size.width > 520
-                      ? '500px'
-                      : '350px',
-                  height:
-                    size.width > 950
-                      ? '600px'
-                      : size.width > 700
-                      ? '450px'
-                      : '300px',
-                  margin: '20px',
-                }}
-              >
-                <div>
-                  <img
-                    src={allPosts}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt='front'
-                  />
-                </div>
-                <div>
-                  <img
-                    src={allPosts2}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt=''
-                  />
-                </div>
-                <div>
-                  <img
-                    src={singlePost}
-                    style={{
-                      width:
-                        size.width > 950
-                          ? '750px'
-                          : size.width > 700
-                          ? '500px'
-                          : size.width > 520
-                          ? '400px'
-                          : '200px',
-                      height:
-                        size.width > 950
-                          ? '600px'
-                          : size.width > 700
-                          ? '450px'
-                          : '300px',
-                    }}
-                    alt=''
-                  />
-                </div>
-              </Carousel>): (null)}
-              
-            </div>
-            <div className='carousel' style={{ flexWrap: 'wrap-reverse' }}>
-              <div
-                ref={(el) => {
-                  project.current[7] = el;
-                }}
-              >
-                <div className='test'>
-                  {size.width> 520 ? ( <Carousel
+              {size.width > 520 ? (
+                <Carousel
                   easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
                   transitionMs={700}
                   itemsToShow={1}
@@ -1726,7 +1654,7 @@ function App() {
                 >
                   <div>
                     <img
-                      src={chat}
+                      src={allPosts}
                       style={{
                         width:
                           size.width > 950
@@ -1748,7 +1676,7 @@ function App() {
                   </div>
                   <div>
                     <img
-                      src={login}
+                      src={allPosts2}
                       style={{
                         width:
                           size.width > 950
@@ -1770,7 +1698,7 @@ function App() {
                   </div>
                   <div>
                     <img
-                      src={register}
+                      src={singlePost}
                       style={{
                         width:
                           size.width > 950
@@ -1790,8 +1718,199 @@ function App() {
                       alt=''
                     />
                   </div>
-                </Carousel>) : null}
-               
+                </Carousel>
+              ) : null}
+            </div>
+            <div className='carousel' style={{ flexWrap: 'wrap-reverse' }}>
+              <div
+                ref={(el) => {
+                  project.current[7] = el;
+                }}
+              >
+                <div className='test'>
+                  {size.width > 520 ? (
+                    <Carousel
+                      easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
+                      transitionMs={700}
+                      itemsToShow={1}
+                      pagination={false}
+                      //enableAutoPlay
+                      //autoPlaySpeed={5500}
+                      style={{
+                        backgroundColor: ' black',
+                        width:
+                          size.width > 950
+                            ? '900px'
+                            : size.width > 700
+                            ? '650px'
+                            : size.width > 520
+                            ? '500px'
+                            : '350px',
+                        height:
+                          size.width > 950
+                            ? '600px'
+                            : size.width > 700
+                            ? '450px'
+                            : '300px',
+                        margin: '20px 0px 20px 0px',
+                      }}
+                    >
+                      <div>
+                        <img
+                          src={freelancer1}
+                          style={{
+                            width:
+                              size.width > 950
+                                ? '750px'
+                                : size.width > 700
+                                ? '500px'
+                                : size.width > 520
+                                ? '380px'
+                                : '200px',
+                            height:
+                              size.width > 950
+                                ? '600px'
+                                : size.width > 700
+                                ? '450px'
+                                : '300px',
+                          }}
+                          alt='front'
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src={freelancer2}
+                          style={{
+                            width:
+                              size.width > 950
+                                ? '750px'
+                                : size.width > 700
+                                ? '500px'
+                                : size.width > 520
+                                ? '400px'
+                                : '200px',
+                            height:
+                              size.width > 950
+                                ? '600px'
+                                : size.width > 700
+                                ? '450px'
+                                : '300px',
+                          }}
+                          alt=''
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src={freelancer3}
+                          style={{
+                            width:
+                              size.width > 950
+                                ? '750px'
+                                : size.width > 700
+                                ? '500px'
+                                : size.width > 520
+                                ? '380px'
+                                : '200px',
+                            height:
+                              size.width > 950
+                                ? '600px'
+                                : size.width > 700
+                                ? '450px'
+                                : '300px',
+                          }}
+                          alt=''
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src={freelancer4}
+                          style={{
+                            width:
+                              size.width > 950
+                                ? '750px'
+                                : size.width > 700
+                                ? '500px'
+                                : size.width > 520
+                                ? '380px'
+                                : '200px',
+                            height:
+                              size.width > 950
+                                ? '600px'
+                                : size.width > 700
+                                ? '450px'
+                                : '300px',
+                          }}
+                          alt=''
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src={freelancer5}
+                          style={{
+                            width:
+                              size.width > 950
+                                ? '750px'
+                                : size.width > 700
+                                ? '500px'
+                                : size.width > 520
+                                ? '380px'
+                                : '200px',
+                            height:
+                              size.width > 950
+                                ? '600px'
+                                : size.width > 700
+                                ? '450px'
+                                : '300px',
+                          }}
+                          alt=''
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src={freelancer6}
+                          style={{
+                            width:
+                              size.width > 950
+                                ? '750px'
+                                : size.width > 700
+                                ? '500px'
+                                : size.width > 520
+                                ? '380px'
+                                : '200px',
+                            height:
+                              size.width > 950
+                                ? '600px'
+                                : size.width > 700
+                                ? '450px'
+                                : '300px',
+                          }}
+                          alt=''
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src={freelancer7}
+                          style={{
+                            width:
+                              size.width > 950
+                                ? '750px'
+                                : size.width > 700
+                                ? '500px'
+                                : size.width > 520
+                                ? '380px'
+                                : '200px',
+                            height:
+                              size.width > 950
+                                ? '600px'
+                                : size.width > 700
+                                ? '450px'
+                                : '300px',
+                          }}
+                          alt=''
+                        />
+                      </div>
+                    </Carousel>
+                  ) : null}
                 </div>
               </div>
               <div
@@ -1804,14 +1923,14 @@ function App() {
                   project.current[6] = el;
                 }}
               >
-                <h2>E-Commerce Site</h2>
+                <h2>Social media, JobFinder</h2>
                 <div>
-                  Its my latest project of online shop made in React and Redux.
-                  For this project I made backend in firestore and used firebase
-                  authentication. Firstly I made styling with SCSS , but then I
-                  rewrote whole projects to styled components. Moreover contact
-                  page using Google Maps API and site is connected to Stripe API
-                  to imitate payment.
+                  Its rather simple to use site where you can post or find job
+                  offerts, make your own portfolio and connect with other
+                  professionals. For backend I have used nonrelatioal database
+                  MongoDB and Node.js and Express.js framework. Recently I added
+                  github API feature to display github repositories of users by adding their github
+                  username to profile.
                   <div
                     style={{
                       fontSize: '20px',
@@ -1821,7 +1940,7 @@ function App() {
                   >
                     Technologies:
                   </div>
-                  <div className="gridSkill">
+                  <div className='gridSkill'>
                     <div className='containerSkill2' style={{ width: '55px' }}>
                       <div className='card2'>
                         <div className='imgBox2'>
@@ -1851,65 +1970,42 @@ function App() {
                     <div className='containerSkill2'>
                       <div className='card2'>
                         <div className='imgBox2'>
-                          <img
-                            src={firebase}
-                            alt=''
-                            style={{ width: '50px' }}
-                          />
+                          <img src={mongodb} alt='' style={{ width: '50px' }} />
                         </div>
                         <div
                           className='content2'
                           style={{ marginLeft: '-40px' }}
                         >
-                          <h2>Firebase</h2>
+                          <h2>MongoDB</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='containerSkill2'>
+                      <div className='card2'>
+                        <div className='imgBox2'>
+                          <img src={nodejs} alt='' style={{ width: '50px' }} />
+                        </div>
+                        <div
+                          className='content2'
+                          style={{ marginLeft: '-40px' }}
+                        >
+                          <h2>Node.js</h2>
                         </div>
                       </div>
                     </div>
                     <div className='containerSkill2' style={{ width: '145px' }}>
-                      <div className='card2'>
-                        <div
-                          className='imgBox2'
-                          style={{ width: '100px', left: '-50px' }}
-                        >
-                          <img src={styledComponents} alt='' />
-                        </div>
-                        <div
-                          className='content2'
-                          style={{ marginLeft: '-80px' }}
-                        >
-                          <h2>StyledComponents</h2>
-                        </div>
+                    <div className='card2'>
+                      <div
+                        className='imgBox2'
+                        style={{ width: '100px', left: '-50px' }}
+                      >
+                        <img src={express} alt='' />
+                      </div>
+                      <div className='content2' style={{ marginLeft: '-50px' }}>
+                        <h2>Express.js</h2>
                       </div>
                     </div>
-                    <div className='containerSkill2' style={{ width: '105px' }}>
-                      <div className='card2'>
-                        <div
-                          className='imgBox2'
-                          style={{ width: '100px', left: '-50px' }}
-                        >
-                          <img src={googleApi} alt='' />
-                        </div>
-                        <div className='content2'>
-                          <h2>GoogleApi</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div className='containerSkill2' style={{ width: '105px' }}>
-                      <div className='card2'>
-                        <div
-                          className='imgBox2'
-                          style={{ width: '100px', left: '-50px' }}
-                        >
-                          <img src={stripe} alt='' />
-                        </div>
-                        <div
-                          className='content2'
-                          style={{ marginLeft: '-40px' }}
-                        >
-                          <h2>Stripe</h2>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
                   </div>
                   <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
                     Links:
@@ -1937,7 +2033,7 @@ function App() {
                         style={{ fontSize: '50px' }}
                         target='_blank'
                         rel='noopener noreferrer'
-                        href='https://github.com/nikub444'
+                        href='https://github.com/nikub444/Freelancer'
                       >
                         <i
                           className='fab fa-github-square'
@@ -1963,7 +2059,7 @@ function App() {
                         }}
                         target='_blank'
                         rel='noopener noreferrer'
-                        href='https://github.com/nikub444'
+                        href='https://freelancerjobs.herokuapp.com/'
                       >
                         <i className='fas fa-globe'></i>
                       </a>
@@ -2004,8 +2100,8 @@ function App() {
                 >
                   Technologies:
                 </div>
-                <div className="gridSkill">
-                <div className='containerSkill2' style={{ width: '55px' }}>
+                <div className='gridSkill'>
+                  <div className='containerSkill2' style={{ width: '55px' }}>
                     <div className='card2'>
                       <div className='imgBox2'>
                         <img src={react} alt='' />
@@ -2045,7 +2141,6 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  
                 </div>
                 <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
                   Links:
