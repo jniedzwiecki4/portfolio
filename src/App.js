@@ -39,14 +39,16 @@ import semanticUI from './images/semanticUI.png';
 import typescript from './images/typescript.png';
 import reactNative from './images/reactNative.png';
 import mongodb from './images/mongodb.png';
-import express from './images/express.png'
-import freelancer1 from './images/projects/Freelancer/front.png'
-import freelancer2 from './images/projects/Freelancer/front2.png'
-import freelancer3 from './images/projects/Freelancer/dashboard.png'
-import freelancer4 from './images/projects/Freelancer/freelancers.png'
-import freelancer5 from './images/projects/Freelancer/offerts.png'
-import freelancer6 from './images/projects/Freelancer/signin.png'
-import freelancer7 from './images/projects/Freelancer/signup.png'
+import express from './images/express.png';
+import freelancer1 from './images/projects/Freelancer/front.png';
+import freelancer2 from './images/projects/Freelancer/front2.png';
+import freelancer3 from './images/projects/Freelancer/dashboard.png';
+import freelancer4 from './images/projects/Freelancer/freelancers.png';
+import freelancer5 from './images/projects/Freelancer/offerts.png';
+import freelancer6 from './images/projects/Freelancer/signin.png';
+import freelancer7 from './images/projects/Freelancer/signup.png';
+import logoPortfolio from './images/LogoPortfolio2.png';
+import gif from './images/gif2.gif';
 
 import gsap from 'gsap';
 import {
@@ -78,71 +80,9 @@ function App() {
   let navTrigger = useRef([null]);
   let navTriggerBox = useRef([null]);
 
+  let logo = useRef(null);
+
   useEffect(() => {
-    // gsap.fromTo(
-    //   navTrigger.current[0],
-    //   {},
-    //   {
-    //     duration: 0.5,
-    //     ease: SteppedEase.easeOut,
-
-    //     scrollTrigger: {
-    //       trigger: navTrigger.current[0],
-    //       startTrigger: navTriggerBox.current[0],
-    //       endTrigger: navTriggerBox.current[0],
-    //       toggleActions: 'restart pause restart pause',
-    //       toggleClass: 'active',
-
-    //       start: 'top 60%',
-    //       end: 'bottom 70%',
-    //       scrub: 1,
-    //       markers:true
-    //     },
-    //   }
-    // );
-    // gsap.fromTo(
-    //   navTrigger.current[1],
-    //   {},
-    //   {
-    //     duration: 0.5,
-    //     ease: SteppedEase.easeOut,
-
-    //     scrollTrigger: {
-    //       trigger: navTrigger.current[1],
-    //       startTrigger: navTriggerBox.current[1],
-    //       endTrigger: navTriggerBox.current[1],
-    //       toggleActions: 'restart pause none pause',
-    //       toggleClass: 'active',
-
-    //       start: 'top 60%',
-    //       end: 'bottom 70%',
-    //       scrub: 1,
-
-    //     },
-    //   }
-    // );
-    // gsap.fromTo(
-    //   navTrigger.current[2],
-    //   {},
-    //   {
-    //     duration: 0.5,
-    //     ease: SteppedEase.easeOut,
-
-    //     scrollTrigger: {
-    //       trigger: navTrigger.current[2],
-    //       startTrigger: navTriggerBox.current[2],
-    //       endTrigger: navTriggerBox.current[2],
-    //       toggleActions: 'restart pause restart pause',
-    //       toggleClass: 'active',
-
-    //       start: 'top 60%',
-    //       end: 'bottom 70%',
-    //       scrub: 1,
-    //       markers:true
-    //     },
-    //   }
-    // );
-
     gsap.fromTo(
       intro,
       { autoAlpha: 0, y: -10 },
@@ -419,11 +359,9 @@ function App() {
     <div className='App'>
       <div className='slide one' id='AboutMe'>
         <header className='App-header'>
-          <div className='wrapper'>
-            <p>Hi, I am</p>
-            <p className='name'> Jakub Niedźwiecki</p>
-            <p> Junior front end & fullstack developer</p>
-          </div>
+          <img src={gif} alt='' className='logoAbs gif' />
+
+          <img src={logoPortfolio} alt='' className='logoAbs logo' />
         </header>
       </div>
       <div>
@@ -469,7 +407,6 @@ function App() {
           <a
             className='a'
             href='#projects'
-            
             ref={(el) => {
               navTrigger.current[2] = el;
             }}
@@ -1929,8 +1866,8 @@ function App() {
                   offerts, make your own portfolio and connect with other
                   professionals. For backend I have used nonrelatioal database
                   MongoDB and Node.js and Express.js framework. Recently I added
-                  github API feature to display github repositories of users by adding their github
-                  username to profile.
+                  github API feature to display github repositories of users by
+                  adding their github username to profile.
                   <div
                     style={{
                       fontSize: '20px',
@@ -1994,18 +1931,21 @@ function App() {
                       </div>
                     </div>
                     <div className='containerSkill2' style={{ width: '145px' }}>
-                    <div className='card2'>
-                      <div
-                        className='imgBox2'
-                        style={{ width: '100px', left: '-50px' }}
-                      >
-                        <img src={express} alt='' />
-                      </div>
-                      <div className='content2' style={{ marginLeft: '-50px' }}>
-                        <h2>Express.js</h2>
+                      <div className='card2'>
+                        <div
+                          className='imgBox2'
+                          style={{ width: '100px', left: '-50px' }}
+                        >
+                          <img src={express} alt='' />
+                        </div>
+                        <div
+                          className='content2'
+                          style={{ marginLeft: '-50px' }}
+                        >
+                          <h2>Express.js</h2>
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </div>
                   <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
                     Links:
@@ -2078,7 +2018,9 @@ function App() {
               display: 'flex',
               justifyContent: 'center',
               paddingTop: '20px',
+              
             }}
+            className='end'
           >
             <div
               className='introductionField'

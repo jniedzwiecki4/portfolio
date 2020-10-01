@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 .App {
   text-align: center;
   display: flex;
@@ -11,7 +12,7 @@
 }
 
 .App-header {
-  min-height: 100vh;
+  height: 120vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -19,25 +20,126 @@
   align-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  /*background-image: radial-gradient(#2e2a2a, black);*/
-  background: url('./images//giphy11.gif');
+  background-color: black;
+  /* background: url('./images//giphy12.gif'); */
   /* background-size: 1800px; */
-  background-size: 100% 105%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   font-family: 'Baloo Tammudu 2', cursive;
 }
 .wrapper {
-  height: 500px;
-  width: 500px;
+  height: auto;
+  width: 100%;
   z-index: 15;
   font-size: 1em;
   padding: 10px;
+  /* background-image: url('./images//giphy12.gif');
+  /* background-image: url('./images//LogoPortfolioBck.png');
+  background-size: 100% 100%; */
 }
 
-@media screen and (max-width: 500px) {
-  .wrapper {
-    width: auto;
+.logoAbs {
+  position: absolute;
+  /* width: 100%;
+  height: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 60%;
+  height: auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .App-header {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .App-header {
+    height: 110vh;
+  }
+}
+@media screen and (max-width: 750px) {
+  .App-header {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .logoAbs {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logoAbs {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .logoAbs {
+    width: 100%;
+  }
+}
+.logo {
+  opacity: 0;
+  animation-name: animelogo;
+  animation-duration: 0.5s;
+  animation-delay: 0.8s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+}
+.gif {
+  opacity: 1;
+  animation-name: animegif;
+  animation-duration: 0.5s;
+  animation-delay: 0.8s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+}
+@keyframes animelogo {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animegif {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 p {
@@ -191,9 +293,9 @@ nav {
   background-color: transparent;
   text-align: center;
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .textbox {
     height: auto;
   }
@@ -426,7 +528,6 @@ h1 {
 ul {
   position: relative;
   display: flex;
-  
 }
 ul li {
   position: relative;
@@ -491,6 +592,7 @@ ul li a:hover::before {
   background-color: black;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .introductionField {
@@ -515,8 +617,8 @@ ul li a:hover::before {
 @media screen and (max-width: 420px) {
   .shadowCopyright {
     box-shadow: 0 0 1px 1px rgb(142, 211, 255, 0.1),
-    0 40px 2px 2px rgba(255, 255, 255, 0.01),
-    0 290px 300px 20px rgb(142, 211, 255, 1);
+      0 40px 2px 2px rgba(255, 255, 255, 0.01),
+      0 290px 300px 20px rgb(142, 211, 255, 1);
   }
 }
 .shadowCopyrightBox {
@@ -526,7 +628,7 @@ ul li a:hover::before {
 }
 
 .copyright {
-  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: 'Varela Round', sans-serif;
 }
 
 @media screen and (max-width: 720px) {
