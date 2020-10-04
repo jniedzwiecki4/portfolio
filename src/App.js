@@ -906,12 +906,12 @@ function App() {
             >
               <h2>E-Commerce Site</h2>
               <div>
-                Its my latest project of online shop made in React and Redux.
-                For this project I made backend in firestore and used firebase
-                authentication. Firstly I made styling with SCSS , but then I
-                rewrote whole projects to styled components. Moreover contact
+                This is my latest online store project made in React and Redux.
+                For this project I made back-end in firestore and used firebase
+                authentication. Firstly I styled it with SCSS, but then I
+                rewrote entire projects to StyledComponents. In addition, contact
                 page is using Google Maps API and site is connected to Stripe API
-                to imitate payment.
+                to mimic payment.
                 <div
                   style={{
                     fontSize: '20px',
