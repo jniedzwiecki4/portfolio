@@ -605,6 +605,7 @@ ul li a:hover::before {
   margin: 20px;
   padding: 5px;
   font-size: initial;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .shadowCopyright {

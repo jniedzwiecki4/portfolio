@@ -830,7 +830,7 @@ function App() {
                 <h2>Animations</h2>
                 <p>
                   I usually use Gsap for animations(including this site), but
-                  also I know how deal with other libraries like Framer Motion,
+                  also I know how to deal with other libraries like Framer Motion,
                   React-Transition-Group or React Motion. I know basics of
                   Three.js and in the future I want to deepen my knowledge in 3D
                   graphics and animations.{' '}
@@ -910,7 +910,7 @@ function App() {
                 For this project I made backend in firestore and used firebase
                 authentication. Firstly I made styling with SCSS , but then I
                 rewrote whole projects to styled components. Moreover contact
-                page using Google Maps API and site is connected to Stripe API
+                page is using Google Maps API and site is connected to Stripe API
                 to imitate payment.
                 <div
                   style={{
@@ -1312,7 +1312,7 @@ function App() {
                 storing data, I used local storage, but it wasn't the best way
                 to handle data, so I rewrote it to redux. Current version of app
                 is storing data in Realtime Database and Storage from Firebase.
-                App also use Firebase Authentication. For frontend I have used
+                App also uses Firebase Authentication. For frontend I have used
                 React Semantic UI framework.Basic fuctionalities of this site
                 are: sending messages, images, changing color themes and more!
                 Works only on desktop and tablet.{' '}
@@ -1862,7 +1862,7 @@ function App() {
               >
                 <h2>Social media, JobFinder</h2>
                 <div>
-                  Its rather simple to use site where you can post or find job
+                  Its simple to use site where you can post or find job
                   offerts, make your own portfolio and connect with other
                   professionals. For backend I have used nonrelatioal database
                   MongoDB and Node.js and Express.js framework. Recently I added
