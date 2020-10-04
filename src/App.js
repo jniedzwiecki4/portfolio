@@ -494,7 +494,7 @@ function App() {
                 Beside, learning in college and writing websites I am passionate
                 about olympic weightlifting and powerlifting. I like learning
                 foreign languages (currently Spanish, which I practice until
-                middle school), but also i cut my teeth on Russian and German.
+                middle school), but also I cut my teeth on Russian and German.
                 In free time I try my hand at photography and drawing art,
                 watching movies and read a lot of books about theorethical
                 physics and philosophy of science.
