@@ -474,30 +474,30 @@ function App() {
               <p>
                 I am student of Computer Science and Econometrics at AGH
                 Uniersity of Science and Technology. Few years ago I wanted to
-                make a blog about automation trading on a stock market, because
-                in those days I was learning and writing in MQL4 language(which
+                start a blog about trading automation in the stock market, because
+                at that time I was learning and writing in MQL4 language (which
                 is very similar to C++ or C) simple trading bots. I decided to
                 make it in Wordpress, but I was not content of my work. I wanted
-                to make it look better, so I started to learn front end
-                technologies. After a while I realized that making websites and
-                learning everything that is assosiated to it, is much more
-                interesting than my previous work. My amature 'career' as web
+                to make it look better, so I started learning front-end
+                technologies. After a while, I realized that building websites and
+                learning everything about it, was much more
+                interesting than my previous job. My amateur 'career' as web
                 developer started two years ago with writing plugins and custom
                 themes in Wordpress CMS. I wanted to know more, so after
-                learning JQuery, I switched to another front end framework React
-                which I use currently in my projects. Since January 2019 I
-                continously broaden my knowledge in backend and front end
-                technologies. My aim is to become a full-stack developer in a
+                learning JQuery, I switched to another front-end framework, React,
+                which I am currently using for my projects. Since January 2019 I
+                have been constantly expanding my knowledge in the field of back-end and front-end
+                technologies. My goal is to become a full-stack developer in a
                 future.{' '}
               </p>
               <p>
-                Beside, learning in college and writing websites I am passionate
+                Beside, studying at university and writing websites I am passionate
                 about olympic weightlifting and powerlifting. I like learning
                 foreign languages (currently Spanish, which I practice until
                 middle school), but also I cut my teeth on Russian and German.
-                In free time I try my hand at photography and drawing art,
-                watching movies and read a lot of books about theorethical
-                physics and philosophy of science.
+                In my free time I try my hand at photography and drawing art,
+                watch movies and read a lot of books on theorethical
+                physics, philosophy and philosophy of science.
               </p>
             </div>
           </div>
@@ -648,7 +648,7 @@ function App() {
               <div className='content'>
                 <h2>CSS, Sass, BEM and StyledComponents</h2>
                 <p>
-                  I can style my website with plain css as well as in sass. I am
+                  I can style my website with plain css as well as in Sass. I am
                   usually using StyledComponents in my projects, but also I am
                   able to use BEM methodology. All of my websites have been
                   complied with responsive design principles.{' '}
@@ -711,7 +711,7 @@ function App() {
                 <h2>Node.js and Express.js</h2>
                 <p>
                   I know how to make use of of Node.js REST API and web
-                  framework Express.js(including middleware, routing and error
+                  framework Express.js (including middleware, routing and error
                   handling) and mix it with MongoDb{' '}
                 </p>
               </div>
@@ -750,7 +750,7 @@ function App() {
                 <h2>MongoDb, MySQL and MS SQL queries</h2>
                 <p>
                   I know how to integrate databases in my web projects. I have
-                  been using relational and nonrelational environment.
+                  been using relational and nonrelational databases.
                 </p>
               </div>
             </div>
@@ -788,7 +788,7 @@ function App() {
                 <h2>GraphQL and Apollo</h2>
                 <p>
                   I know how to fetch data and how to use Apollo Client. I am
-                  currently building website backend with this technology which
+                  currently building website back-end with this technology which
                   you can find on my github.{' '}
                 </p>
               </div>
@@ -829,8 +829,8 @@ function App() {
               <div className='content'>
                 <h2>Animations</h2>
                 <p>
-                  I usually use Gsap for animations(including this site), but
-                  also I know how to deal with other libraries like Framer Motion,
+                  I usually use Gsap for animations (including this site), but
+                  I also know how to deal with other libraries like Framer Motion,
                   React-Transition-Group or React Motion. I know basics of
                   Three.js and in the future I want to deepen my knowledge in 3D
                   graphics and animations.{' '}
