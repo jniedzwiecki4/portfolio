@@ -474,29 +474,29 @@ function App() {
               <p>
                 I am student of Computer Science and Econometrics at AGH
                 Uniersity of Science and Technology. Few years ago I wanted to
-                start a blog about trading automation in the stock market, because
-                at that time I was learning and writing in MQL4 language (which
-                is very similar to C++ or C) simple trading bots. I decided to
-                make it in Wordpress, but I was not content of my work. I wanted
-                to make it look better, so I started learning front-end
-                technologies. After a while, I realized that building websites and
-                learning everything about it, was much more
+                start a blog about trading automation in the stock market,
+                because at that time I was learning and writing in MQL4 language
+                (which is very similar to C++ or C) simple trading bots. I
+                decided to make it in Wordpress, but I was not content of my
+                work. I wanted to make it look better, so I started learning
+                front-end technologies. After a while, I realized that building
+                websites and learning everything about it, was much more
                 interesting than my previous job. My amateur 'career' as web
                 developer started two years ago with writing plugins and custom
                 themes in Wordpress CMS. I wanted to know more, so after
-                learning JQuery, I switched to another front-end framework, React,
-                which I am currently using for my projects. Since January 2019 I
-                have been constantly expanding my knowledge in the field of back-end and front-end
-                technologies. My goal is to become a full-stack developer in a
-                future.{' '}
+                learning JQuery, I switched to another front-end framework,
+                React, which I am currently using for my projects. Since January
+                2019 I have been constantly expanding my knowledge in the field
+                of back-end and front-end technologies. My goal is to become a
+                full-stack developer in a future.{' '}
               </p>
               <p>
-                Beside, studying at university and writing websites I am passionate
-                about olympic weightlifting and powerlifting. I like learning
-                foreign languages (currently Spanish, which I practice until
-                middle school), but also I cut my teeth on Russian and German.
-                In my free time I try my hand at photography and drawing art,
-                watch movies and read a lot of books on theorethical
+                Beside, studying at university and writing websites I am
+                passionate about olympic weightlifting and powerlifting. I like
+                learning foreign languages (currently Spanish, which I practice
+                until middle school), but also I cut my teeth on Russian and
+                German. In my free time I try my hand at photography and drawing
+                art, watch movies and read a lot of books on theorethical
                 physics, philosophy and philosophy of science.
               </p>
             </div>
@@ -829,8 +829,8 @@ function App() {
               <div className='content'>
                 <h2>Animations</h2>
                 <p>
-                  I usually use Gsap for animations (including this site), but
-                  I also know how to deal with other libraries like Framer Motion,
+                  I usually use Gsap for animations (including this site), but I
+                  also know how to deal with other libraries like Framer Motion,
                   React-Transition-Group or React Motion. I know basics of
                   Three.js and in the future I want to deepen my knowledge in 3D
                   graphics and animations.{' '}
@@ -909,9 +909,9 @@ function App() {
                 This is my latest online store project made in React and Redux.
                 For this project I made back-end in firestore and used firebase
                 authentication. Firstly I styled it with SCSS, but then I
-                rewrote entire projects to StyledComponents. In addition, contact
-                page is using Google Maps API and site is connected to Stripe API
-                to mimic payment.
+                rewrote entire projects to StyledComponents. In addition,
+                contact page is using Google Maps API and site is connected to
+                Stripe API to mimic payment.
                 <div
                   style={{
                     fontSize: '20px',
@@ -1308,12 +1308,12 @@ function App() {
             >
               <h2>Online Chat</h2>
               <div>
-                Its my third version of this kind of aplication. Firstly, for
-                storing data, I used local storage, but it wasn't the best way
-                to handle data, so I rewrote it to redux. Current version of app
-                is storing data in Realtime Database and Storage from Firebase.
-                App also uses Firebase Authentication. For frontend I have used
-                React Semantic UI framework.Basic fuctionalities of this site
+                Its my third version of this kind of aplication. Firstly, I used
+                local storage for storing data, but it wasn't the best way to
+                handle that, so I rewrote it to redux. Current version of app is
+                storing data in Realtime Database and Storage from Firebase. App
+                also uses Firebase Authentication. For frontend I have used
+                React Semantic UI framework. Basic fuctionalities of this site
                 are: sending messages, images, changing color themes and more!
                 Works only on desktop and tablet.{' '}
                 <div
@@ -1862,12 +1862,12 @@ function App() {
               >
                 <h2>Social media, JobFinder</h2>
                 <div>
-                  Its simple to use site where you can post or find job
-                  offerts, make your own portfolio and connect with other
-                  professionals. For backend I have used nonrelatioal database
-                  MongoDB and Node.js and Express.js framework. Recently I added
-                  github API feature to display github repositories of users by
-                  adding their github username to profile.
+                  It is user friendly site where you can post or find job offerts,
+                  make your own portfolio and connect with other professionals.
+                  For backend I have used nonrelatioal database MongoDB and
+                  Node.js and Express.js framework. Recently I added github API
+                  feature to display github repositories of users by adding
+                  their github username to profile.
                   <div
                     style={{
                       fontSize: '20px',
@@ -2018,7 +2018,6 @@ function App() {
               display: 'flex',
               justifyContent: 'center',
               paddingTop: '20px',
-              
             }}
             className='end'
           >
