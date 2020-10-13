@@ -47,7 +47,7 @@ import freelancer4 from './images/projects/Freelancer/freelancers.png';
 import freelancer5 from './images/projects/Freelancer/offerts.png';
 import freelancer6 from './images/projects/Freelancer/signin.png';
 import freelancer7 from './images/projects/Freelancer/signup.png';
-import logoPortfolio from './images/LogoPortfolio2.png';
+import logoPortfolio from './images/LogoPortfolio3.png';
 import gif from './images/gif2.gif';
 
 import gsap from 'gsap';
