@@ -260,8 +260,8 @@ nav {
   position: fixed;
   top: 0;
   width: 99.9%;
-  background-color: none;
-  opacity: 0.7;
+  background-color: black;
+  opacity: 1;
   padding-top: 5px;
   margin-right: 100px;
   float: right;
@@ -298,6 +298,8 @@ nav {
 @media screen and (max-width: 1200px) {
   .textbox {
     height: auto;
+    width: auto;
+    padding: 15px;
   }
 }
 

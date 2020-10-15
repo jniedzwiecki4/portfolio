@@ -87,7 +87,7 @@ function App() {
       intro,
       { autoAlpha: 0, y: -10 },
       {
-        autoAlpha: 1,
+        autoAlpha: 0.9,
         duration: 1,
         ease: SteppedEase.easeOut,
         y: 0,
@@ -97,8 +97,8 @@ function App() {
           trigger: introTrigger,
           scrub: 1,
           toggleActions: 'restart pause resume none',
-          start: '-500px 60%',
-          end: '-300px 70%',
+          start: '-900px 60%',
+          end: '-900px 70%',
         },
       }
     );
