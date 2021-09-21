@@ -19,6 +19,7 @@ import click from "./images/click.png";
 import swipe from "./images/swipe.png";
 import graphql from "./images/GraphQL.png";
 import gatsby from "./images/gatsby.png";
+import next from "./images/next.png";
 import gsapLogo from "./images/gsap.png";
 import neonPortrait from "./images/testPortraitchybafinalXD.jpg";
 import front from "./images/projects/vdo/Front.png";
@@ -834,6 +835,28 @@ function App() {
                   React-Transition-Group or React Motion. I know basics of
                   Three.js and in the future I want to deepen my knowledge in 3D
                   graphics and animations.{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="containerSkill"
+            ref={(el) => {
+              skill.current[14] = el;
+            }}
+          >
+            <div className="card">
+              <div className="imgBox">
+                <img src={next} alt="" />
+              </div>
+              <div className="content">
+                <h2>Gatsby</h2>
+                <p>
+                  I know how gatsby is building blocks and how to deal with
+                  plugins such as transformer and source-filesystem. I can
+                  programmatically create pages with slugs. Moreover I have been
+                  using GraphiQL development environment and know how gatsby is
+                  storing data.
                 </p>
               </div>
             </div>
