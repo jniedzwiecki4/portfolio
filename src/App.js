@@ -1,56 +1,56 @@
-import React, { useState, useRef, useEffect } from 'react';
-import './App.css';
+import React, { useState, useRef, useEffect } from "react";
+import "./App.css";
 
-import img1 from './images/img1.JPG';
-import react from './images/react.png';
-import react2 from './images/react2.png';
-import jest from './images/jest.jpg';
-import redux from './images/redux.png';
-import redux2 from './images/redux2.png';
-import tsandjs from './images/tsandjs.png';
-import sass from './images/sass.svg';
-import wordpress from './images/wordpress.png';
-import adobe from './images/adobe.jpg';
-import nodejs from './images/nodejs.png';
-import db from './images/db.jpg';
-import firebase from './images/firebase.png';
-import git from './images/git.png';
-import click from './images/click.png';
-import swipe from './images/swipe.png';
-import graphql from './images/GraphQL.png';
-import gatsby from './images/gatsby.png';
-import gsapLogo from './images/gsap.png';
-import neonPortrait from './images/testPortraitchybafinalXD.jpg';
-import front from './images/projects/vdo/Front.png';
-import shop from './images/projects/vdo/Shop.png';
-import contact from './images/projects/vdo/Contact.png';
-import signin from './images/projects/vdo/SingIn.png';
-import payment from './images/projects/vdo/Payment.png';
-import chat from './images/projects/ChatApp/Front2.png';
-import login from './images/projects/ChatApp/Login.png';
-import register from './images/projects/ChatApp/Register.png';
-import allPosts from './images/projects/Blog/Front.png';
-import allPosts2 from './images/projects/Blog/Front2.png';
-import singlePost from './images/projects/Blog/Single.png';
-import styledComponents from './images/styledComponents.jpg';
-import googleApi from './images/Google-API.jpg';
-import stripe from './images/stripe.png';
-import semanticUI from './images/semanticUI.png';
-import typescript from './images/typescript.png';
-import reactNative from './images/reactNative.png';
-import mongodb from './images/mongodb.png';
-import express from './images/express.png';
-import freelancer1 from './images/projects/Freelancer/front.png';
-import freelancer2 from './images/projects/Freelancer/front2.png';
-import freelancer3 from './images/projects/Freelancer/dashboard.png';
-import freelancer4 from './images/projects/Freelancer/freelancers.png';
-import freelancer5 from './images/projects/Freelancer/offerts.png';
-import freelancer6 from './images/projects/Freelancer/signin.png';
-import freelancer7 from './images/projects/Freelancer/signup.png';
-import logoPortfolio from './images/LogoPortfolio3.png';
-import gif from './images/gif2.gif';
+import img1 from "./images/img1.JPG";
+import react from "./images/react.png";
+import react2 from "./images/react2.png";
+import jest from "./images/jest.jpg";
+import redux from "./images/redux.png";
+import redux2 from "./images/redux2.png";
+import tsandjs from "./images/tsandjs.png";
+import sass from "./images/sass.svg";
+import wordpress from "./images/wordpress.png";
+import adobe from "./images/adobe.jpg";
+import nodejs from "./images/nodejs.png";
+import db from "./images/db.jpg";
+import firebase from "./images/firebase.png";
+import git from "./images/git.png";
+import click from "./images/click.png";
+import swipe from "./images/swipe.png";
+import graphql from "./images/GraphQL.png";
+import gatsby from "./images/gatsby.png";
+import gsapLogo from "./images/gsap.png";
+import neonPortrait from "./images/testPortraitchybafinalXD.jpg";
+import front from "./images/projects/vdo/Front.png";
+import shop from "./images/projects/vdo/Shop.png";
+import contact from "./images/projects/vdo/Contact.png";
+import signin from "./images/projects/vdo/SingIn.png";
+import payment from "./images/projects/vdo/Payment.png";
+import chat from "./images/projects/ChatApp/Front2.png";
+import login from "./images/projects/ChatApp/Login.png";
+import register from "./images/projects/ChatApp/Register.png";
+import allPosts from "./images/projects/Blog/Front.png";
+import allPosts2 from "./images/projects/Blog/Front2.png";
+import singlePost from "./images/projects/Blog/Single.png";
+import styledComponents from "./images/styledComponents.jpg";
+import googleApi from "./images/Google-API.jpg";
+import stripe from "./images/stripe.png";
+import semanticUI from "./images/semanticUI.png";
+import typescript from "./images/typescript.png";
+import reactNative from "./images/reactNative.png";
+import mongodb from "./images/mongodb.png";
+import express from "./images/express.png";
+import freelancer1 from "./images/projects/Freelancer/front.png";
+import freelancer2 from "./images/projects/Freelancer/front2.png";
+import freelancer3 from "./images/projects/Freelancer/dashboard.png";
+import freelancer4 from "./images/projects/Freelancer/freelancers.png";
+import freelancer5 from "./images/projects/Freelancer/offerts.png";
+import freelancer6 from "./images/projects/Freelancer/signin.png";
+import freelancer7 from "./images/projects/Freelancer/signup.png";
+import logoPortfolio from "./images/LogoPortfolio4.png";
+import gif from "./images/gif2.gif";
 
-import gsap from 'gsap';
+import gsap from "gsap";
 import {
   Power3,
   Power1,
@@ -60,9 +60,9 @@ import {
   Circ,
   Sine,
   TweenMax,
-} from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Carousel from 'react-elastic-carousel';
+} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Carousel from "react-elastic-carousel";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -96,9 +96,9 @@ function App() {
         scrollTrigger: {
           trigger: introTrigger,
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: '-900px 60%',
-          end: '-900px 70%',
+          toggleActions: "restart pause resume none",
+          start: "-900px 60%",
+          end: "-900px 70%",
         },
       }
     );
@@ -115,9 +115,9 @@ function App() {
         scrollTrigger: {
           trigger: theme.current[0],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 80%',
-          end: 'top 75%',
+          toggleActions: "restart pause resume none",
+          start: "top 80%",
+          end: "top 75%",
         },
       }
     );
@@ -134,9 +134,9 @@ function App() {
         scrollTrigger: {
           trigger: theme.current[1],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 80%',
-          end: 'top 75%',
+          toggleActions: "restart pause resume none",
+          start: "top 80%",
+          end: "top 75%",
         },
       }
     );
@@ -153,9 +153,9 @@ function App() {
         scrollTrigger: {
           trigger: theme.current[2],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 80%',
-          end: 'top 75%',
+          toggleActions: "restart pause resume none",
+          start: "top 80%",
+          end: "top 75%",
         },
       }
     );
@@ -172,9 +172,9 @@ function App() {
         scrollTrigger: {
           trigger: theme.current[3],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 80%',
-          end: 'top 75%',
+          toggleActions: "restart pause resume none",
+          start: "top 80%",
+          end: "top 75%",
         },
       }
     );
@@ -191,9 +191,9 @@ function App() {
         scrollTrigger: {
           trigger: theme.current[4],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 80%',
-          end: 'top 75%',
+          toggleActions: "restart pause resume none",
+          start: "top 80%",
+          end: "top 75%",
         },
       }
     );
@@ -231,9 +231,9 @@ function App() {
         scrollTrigger: {
           trigger: clickButton2.current[0],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 60%',
-          end: 'bottom 70%',
+          toggleActions: "restart pause resume none",
+          start: "top 60%",
+          end: "bottom 70%",
         },
       }
     );
@@ -249,9 +249,9 @@ function App() {
         scrollTrigger: {
           trigger: clickButton2.current[1],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 60%',
-          end: 'bottom 70%',
+          toggleActions: "restart pause resume none",
+          start: "top 60%",
+          end: "bottom 70%",
         },
       }
     );
@@ -267,9 +267,9 @@ function App() {
         scrollTrigger: {
           trigger: swipeButton.current[0],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 60%',
-          end: 'bottom 70%',
+          toggleActions: "restart pause resume none",
+          start: "top 60%",
+          end: "bottom 70%",
         },
       }
     );
@@ -285,9 +285,9 @@ function App() {
         scrollTrigger: {
           trigger: swipeButton.current[1],
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top 60%',
-          end: 'bottom 70%',
+          toggleActions: "restart pause resume none",
+          start: "top 60%",
+          end: "bottom 70%",
         },
       }
     );
@@ -304,9 +304,9 @@ function App() {
         scrollTrigger: {
           trigger: skill.current,
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'top bottom',
-          end: 'bottom 90%',
+          toggleActions: "restart pause resume none",
+          start: "top bottom",
+          end: "bottom 90%",
           endTrigger: skill.current[12],
         },
       }
@@ -324,9 +324,9 @@ function App() {
         scrollTrigger: {
           trigger: project.current,
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'center bottom',
-          end: 'bottom 90%',
+          toggleActions: "restart pause resume none",
+          start: "center bottom",
+          end: "bottom 90%",
           endTrigger: project.current[8],
         },
       }
@@ -344,9 +344,9 @@ function App() {
         scrollTrigger: {
           trigger: socialMedia.current,
           scrub: 1,
-          toggleActions: 'restart pause resume none',
-          start: 'center bottom',
-          end: 'center 90%',
+          toggleActions: "restart pause resume none",
+          start: "center bottom",
+          end: "center 90%",
           endTrigger: socialMedia.current[2],
         },
       }
@@ -356,12 +356,12 @@ function App() {
   const size = useWindowSize();
 
   return (
-    <div className='App'>
-      <div className='slide one' id='AboutMe'>
-        <header className='App-header'>
-          <img src={gif} alt='' className='logoAbs gif' />
+    <div className="App">
+      <div className="slide one" id="AboutMe">
+        <header className="App-header">
+          <img src={gif} alt="" className="logoAbs gif" />
 
-          <img src={logoPortfolio} alt='' className='logoAbs logo' />
+          <img src={logoPortfolio} alt="" className="logoAbs logo" />
         </header>
       </div>
       <div>
@@ -371,9 +371,9 @@ function App() {
           }}
         >
           <a
-            className='a'
-            href='#AboutMe'
-            id='navAboutMe'
+            className="a"
+            href="#AboutMe"
+            id="navAboutMe"
             ref={(el) => {
               navTrigger.current[0] = el;
             }}
@@ -392,8 +392,8 @@ function App() {
             Motivation
           </a> */}
           <a
-            className='a'
-            href='#SkillSet'
+            className="a"
+            href="#SkillSet"
             ref={(el) => {
               navTrigger.current[1] = el;
             }}
@@ -405,8 +405,8 @@ function App() {
             SkillSet
           </a>
           <a
-            className='a'
-            href='#projects'
+            className="a"
+            href="#projects"
             ref={(el) => {
               navTrigger.current[2] = el;
             }}
@@ -418,10 +418,10 @@ function App() {
             Projects
           </a>
           <a
-            className='a'
-            href='#contact'
-            id='navAboutMe'
-            style={{ marginRight: '15px' }}
+            className="a"
+            href="#contact"
+            id="navAboutMe"
+            style={{ marginRight: "15px" }}
             ref={(el) => {
               navTrigger.current[0] = el;
             }}
@@ -435,30 +435,30 @@ function App() {
         </nav>
 
         <div
-          className='slide two tech'
+          className="slide two tech"
           ref={(el) => {
             navTriggerBox.current[0] = el;
           }}
         >
           <section
-            className='sectionSkills'
+            className="sectionSkills"
             ref={(el) => {
               theme.current[3] = el;
             }}
           >
-            <div className='skillsDiv'>
-              <h2 className='skills' id='aboutme'>
-                <span className='skillsSpan'>A</span>bout Me
+            <div className="skillsDiv">
+              <h2 className="skills" id="aboutme">
+                <span className="skillsSpan">A</span>bout Me
               </h2>
             </div>
           </section>
 
-          <div className='container'>
+          <div className="container">
             <div
               ref={(el) => {
                 theme.current[2] = el;
               }}
-              className='imgbox'
+              className="imgbox"
             >
               <img
                 src={neonPortrait}
@@ -466,10 +466,10 @@ function App() {
                 //   width: size.width > 525 ? '525px' : '350px',
                 //   height: size.width > 525 ? '600px' : '400px',
                 // }}
-                alt=''
+                alt=""
               />
             </div>
-            <div className='textbox'>
+            <div className="textbox">
               <h2>Bio</h2>
               <p>
                 I am student of Computer Science and Econometrics at AGH
@@ -488,7 +488,7 @@ function App() {
                 React, which I am currently using for my projects. Since January
                 2019 I have been constantly expanding my knowledge in the field
                 of back-end and front-end technologies. My goal is to become a
-                full-stack developer in a future.{' '}
+                full-stack developer in a future.{" "}
               </p>
               <p>
                 Beside, studying at university and writing websites I am
@@ -504,40 +504,40 @@ function App() {
         </div>
 
         <div
-          className='slide three'
+          className="slide three"
           ref={(el) => {
             introTrigger = el;
           }}
-          id='Motivation'
+          id="Motivation"
         ></div>
         <div
-          className='slide four'
-          id='SkillSet'
+          className="slide four"
+          id="SkillSet"
           ref={(el) => {
             navTriggerBox.current[1] = el;
           }}
         >
           <section
-            className='sectionSkills'
+            className="sectionSkills"
             ref={(el) => {
               theme.current[0] = el;
             }}
           >
-            <div className='skillsDiv'>
-              <h2 className='skills' id='skills'>
-                <span className='skillsSpan'>S</span>kills
+            <div className="skillsDiv">
+              <h2 className="skills" id="skills">
+                <span className="skillsSpan">S</span>kills
               </h2>
             </div>
           </section>
-          <div style={{ color: 'white', width: '100%' }}>
+          <div style={{ color: "white", width: "100%" }}>
             <img
               ref={(el) => {
                 clickButton = el;
                 clickButton2.current[0] = el;
               }}
-              style={{ width: '50px', height: '50px', margin: '10px' }}
+              style={{ width: "50px", height: "50px", margin: "10px" }}
               src={click}
-              alt=''
+              alt=""
             />
 
             <span
@@ -545,24 +545,24 @@ function App() {
                 clickButton2.current[1] = el;
               }}
             >
-              If you are on tablet or phone{' '}
-              <span style={{ letterSpacing: '2px', fontSize: '20px' }}>
+              If you are on tablet or phone{" "}
+              <span style={{ letterSpacing: "2px", fontSize: "20px" }}>
                 click
-              </span>{' '}
+              </span>{" "}
               on skill icon
             </span>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[0] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={react} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={react} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>React</h2>
                 <p>
                   I am fluent in writing functional and class components, using
@@ -574,99 +574,99 @@ function App() {
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[1] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={redux} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={redux} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>Redux</h2>
                 <p>
                   I know principles of writing redux actions, reducers and
                   store. I am capable of using asynchronous actions and
-                  middleware.{' '}
+                  middleware.{" "}
                 </p>
               </div>
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[2] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={jest} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={jest} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>Jest, Enzyme and Testing</h2>
                 <p>
                   I understand diferences between Unit, Integration and
                   Functional Testing. I know how to test functional and
                   statefull components as well as connected components to redux
-                  store, actions or reducers.{' '}
+                  store, actions or reducers.{" "}
                 </p>
               </div>
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[3] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={tsandjs} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={tsandjs} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>JavaScript and basics of TypeScript</h2>
                 <p>
                   I am fluent in coding in modern JavaScript. I am currently
                   learning nuances of TypeScript. I already know how to
                   implement TSX in my react projects and how to provide typing
-                  in components, hooks and redux actions and reducers.{' '}
+                  in components, hooks and redux actions and reducers.{" "}
                 </p>
               </div>
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[4] = el;
             }}
           >
-            <div className='card' id='scss'>
-              <div className='imgBox'>
-                <img src={sass} alt='' />
+            <div className="card" id="scss">
+              <div className="imgBox">
+                <img src={sass} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>CSS, Sass, BEM and StyledComponents</h2>
                 <p>
                   I can style my website with plain css as well as in Sass. I am
                   usually using StyledComponents in my projects, but also I am
                   able to use BEM methodology. All of my websites have been
-                  complied with responsive design principles.{' '}
+                  complied with responsive design principles.{" "}
                 </p>
               </div>
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[5] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={wordpress} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={wordpress} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>Wordpress</h2>
                 <p>
                   I know how to build custom theme and how to develop wordpress
@@ -678,56 +678,56 @@ function App() {
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[6] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={adobe} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={adobe} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>Adobe Photoshop, Ilustrator and Adobe XD</h2>
                 <p>
                   I can do simple svg graphics, and have been using Photoshop in
                   my websites for better UI. I have been experimenting with
-                  basic usage of Adobe XD.{' '}
+                  basic usage of Adobe XD.{" "}
                 </p>
               </div>
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[7] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={nodejs} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={nodejs} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>Node.js and Express.js</h2>
                 <p>
                   I know how to make use of of Node.js REST API and web
                   framework Express.js (including middleware, routing and error
-                  handling) and mix it with MongoDb{' '}
+                  handling) and mix it with MongoDb{" "}
                 </p>
               </div>
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[8] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={firebase} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={firebase} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>Firebase</h2>
                 <p>
                   I have been using firebase authentication, realtime database,
@@ -737,16 +737,16 @@ function App() {
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[9] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={db} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={db} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>MongoDb, MySQL and MS SQL queries</h2>
                 <p>
                   I know how to integrate databases in my web projects. I have
@@ -756,16 +756,16 @@ function App() {
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[10] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={git} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={git} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>GIT</h2>
                 <p>
                   I have been using GIT for all of my projects, I know basic
@@ -775,36 +775,36 @@ function App() {
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[11] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={graphql} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={graphql} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>GraphQL and Apollo</h2>
                 <p>
                   I know how to fetch data and how to use Apollo Client. I am
                   currently building website back-end with this technology which
-                  you can find on my github.{' '}
+                  you can find on my github.{" "}
                 </p>
               </div>
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[12] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={gatsby} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={gatsby} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>Gatsby</h2>
                 <p>
                   I know how gatsby is building blocks and how to deal with
@@ -817,23 +817,23 @@ function App() {
             </div>
           </div>
           <div
-            className='containerSkill'
+            className="containerSkill"
             ref={(el) => {
               skill.current[13] = el;
             }}
           >
-            <div className='card'>
-              <div className='imgBox'>
-                <img src={gsapLogo} alt='' />
+            <div className="card">
+              <div className="imgBox">
+                <img src={gsapLogo} alt="" />
               </div>
-              <div className='content'>
+              <div className="content">
                 <h2>Animations</h2>
                 <p>
                   I usually use Gsap for animations (including this site), but I
                   also know how to deal with other libraries like Framer Motion,
                   React-Transition-Group or React Motion. I know basics of
                   Three.js and in the future I want to deepen my knowledge in 3D
-                  graphics and animations.{' '}
+                  graphics and animations.{" "}
                 </p>
               </div>
             </div>
@@ -841,30 +841,30 @@ function App() {
         </div>
 
         <div
-          className='slide five '
-          id='projects'
+          className="slide five "
+          id="projects"
           ref={(el) => {
             navTriggerBox.current[2] = el;
           }}
         >
-          <section className='sectionSkills'>
+          <section className="sectionSkills">
             <div
-              className='skillsDiv'
+              className="skillsDiv"
               ref={(el) => {
                 theme.current[1] = el;
               }}
             >
-              <h2 className='skills' id='projects'>
+              <h2 className="skills" id="projects">
                 Projects
               </h2>
             </div>
           </section>
           <div
             style={{
-              backgroundColor: 'black',
-              color: 'white',
-              width: '100%',
-              paddingBottom: '50px',
+              backgroundColor: "black",
+              color: "white",
+              width: "100%",
+              paddingBottom: "50px",
             }}
           >
             <img
@@ -872,34 +872,34 @@ function App() {
                 swipeButton.current[0] = el;
                 swipeButtonMove = el;
               }}
-              style={{ width: '50px', height: '50px', margin: '10px' }}
+              style={{ width: "50px", height: "50px", margin: "10px" }}
               src={swipe}
-              alt=''
+              alt=""
             />
 
             <span
-              className='help'
+              className="help"
               ref={(el) => {
                 swipeButton.current[1] = el;
               }}
             >
-              You can{' '}
+              You can{" "}
               <span
-                className='helpDan'
-                style={{ letterSpacing: '2px', fontSize: '20px' }}
+                className="helpDan"
+                style={{ letterSpacing: "2px", fontSize: "20px" }}
               >
                 swipe
-              </span>{' '}
-              or{' '}
-              <span style={{ letterSpacing: '2px', fontSize: '20px' }}>
+              </span>{" "}
+              or{" "}
+              <span style={{ letterSpacing: "2px", fontSize: "20px" }}>
                 click
-              </span>{' '}
+              </span>{" "}
               on slider
             </span>
           </div>
-          <div className='carousel'>
+          <div className="carousel">
             <div
-              className='introductionField'
+              className="introductionField"
               ref={(el) => {
                 project.current[0] = el;
               }}
@@ -914,139 +914,139 @@ function App() {
                 Stripe API to mimic payment.
                 <div
                   style={{
-                    fontSize: '20px',
-                    fontWeight: 'bold',
-                    margin: '10px 0px 30px 0px',
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    margin: "10px 0px 30px 0px",
                   }}
                 >
                   Technologies:
                 </div>
-                <div className='gridSkill'>
-                  <div className='containerSkill2' style={{ width: '55px' }}>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={react} alt='' />
+                <div className="gridSkill">
+                  <div className="containerSkill2" style={{ width: "55px" }}>
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={react} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-35px' }}>
+                      <div className="content2" style={{ marginLeft: "-35px" }}>
                         <h2>React</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2'>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={redux} alt='' />
+                  <div className="containerSkill2">
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={redux} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-35px' }}>
+                      <div className="content2" style={{ marginLeft: "-35px" }}>
                         <h2>Redux</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2'>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={firebase} alt='' style={{ width: '50px' }} />
+                  <div className="containerSkill2">
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={firebase} alt="" style={{ width: "50px" }} />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-40px' }}>
+                      <div className="content2" style={{ marginLeft: "-40px" }}>
                         <h2>Firebase</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2' style={{ width: '145px' }}>
-                    <div className='card2'>
+                  <div className="containerSkill2" style={{ width: "145px" }}>
+                    <div className="card2">
                       <div
-                        className='imgBox2'
-                        style={{ width: '100px', left: '-50px' }}
+                        className="imgBox2"
+                        style={{ width: "100px", left: "-50px" }}
                       >
-                        <img src={styledComponents} alt='' />
+                        <img src={styledComponents} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-80px' }}>
+                      <div className="content2" style={{ marginLeft: "-80px" }}>
                         <h2>StyledComponents</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2' style={{ width: '105px' }}>
-                    <div className='card2'>
+                  <div className="containerSkill2" style={{ width: "105px" }}>
+                    <div className="card2">
                       <div
-                        className='imgBox2'
-                        style={{ width: '100px', left: '-50px' }}
+                        className="imgBox2"
+                        style={{ width: "100px", left: "-50px" }}
                       >
-                        <img src={googleApi} alt='' />
+                        <img src={googleApi} alt="" />
                       </div>
-                      <div className='content2'>
+                      <div className="content2">
                         <h2>GoogleApi</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2' style={{ width: '105px' }}>
-                    <div className='card2'>
+                  <div className="containerSkill2" style={{ width: "105px" }}>
+                    <div className="card2">
                       <div
-                        className='imgBox2'
-                        style={{ width: '100px', left: '-50px' }}
+                        className="imgBox2"
+                        style={{ width: "100px", left: "-50px" }}
                       >
-                        <img src={stripe} alt='' />
+                        <img src={stripe} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-40px' }}>
+                      <div className="content2" style={{ marginLeft: "-40px" }}>
                         <h2>Stripe</h2>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
                   Links:
                 </div>
                 <div
                   style={{
-                    display: 'flex',
-                    wrap: 'wrap',
-                    padding: '5px',
-                    justifyContent: 'center',
+                    display: "flex",
+                    wrap: "wrap",
+                    padding: "5px",
+                    justifyContent: "center",
                   }}
                 >
                   <div
-                    className='shadowCopyrightBox'
+                    className="shadowCopyrightBox"
                     style={{
-                      display: 'flex',
-                      wrap: 'wrap',
-                      borderRadius: '50px',
-                      width: '100px',
-                      margin: '5px',
+                      display: "flex",
+                      wrap: "wrap",
+                      borderRadius: "50px",
+                      width: "100px",
+                      margin: "5px",
                     }}
                   >
                     <a
-                      className='a3'
-                      style={{ fontSize: '50px' }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://github.com/nikub444/e-commerce-site'
+                      className="a3"
+                      style={{ fontSize: "50px" }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/nikub444/e-commerce-site"
                     >
                       <i
-                        className='fab fa-github-square'
-                        aria-hidden='true'
+                        className="fab fa-github-square"
+                        aria-hidden="true"
                       ></i>
                     </a>
                   </div>
                   <div
-                    className='shadowCopyrightBox'
+                    className="shadowCopyrightBox"
                     style={{
-                      display: 'flex',
-                      wrap: 'wrap',
-                      borderRadius: '50px',
-                      width: '100px',
-                      margin: '5px',
+                      display: "flex",
+                      wrap: "wrap",
+                      borderRadius: "50px",
+                      width: "100px",
+                      margin: "5px",
                     }}
                   >
                     <a
-                      className='a3'
+                      className="a3"
                       style={{
-                        fontSize: '50px',
-                        padding: '15px 30px 15px 25px',
+                        fontSize: "50px",
+                        padding: "15px 30px 15px 25px",
                       }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://vdo-e-commerce.herokuapp.com/'
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://vdo-e-commerce.herokuapp.com/"
                     >
-                      <i className='fas fa-globe'></i>
+                      <i className="fas fa-globe"></i>
                     </a>
                   </div>
                 </div>
@@ -1059,29 +1059,29 @@ function App() {
             >
               {size.width > 520 ? (
                 <Carousel
-                  easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
+                  easing="cubic-bezier(0.0, 0.0, 0.58, 1.0)"
                   transitionMs={700}
                   itemsToShow={1}
                   pagination={false}
                   //enableAutoPlay
                   //autoPlaySpeed={5500}
                   style={{
-                    backgroundColor: ' black',
+                    backgroundColor: " black",
                     width:
                       size.width > 950
-                        ? '900px'
+                        ? "900px"
                         : size.width > 700
-                        ? '650px'
+                        ? "650px"
                         : size.width > 520
-                        ? '500px'
-                        : '350px',
+                        ? "500px"
+                        : "350px",
                     height:
                       size.width > 950
-                        ? '600px'
+                        ? "600px"
                         : size.width > 700
-                        ? '450px'
-                        : '300px',
-                    margin: '20px',
+                        ? "450px"
+                        : "300px",
+                    margin: "20px",
                   }}
                 >
                   <div>
@@ -1090,20 +1090,20 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt='front'
+                      alt="front"
                     />
                   </div>
                   <div>
@@ -1112,20 +1112,20 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt=''
+                      alt=""
                     />
                   </div>
                   <div>
@@ -1134,20 +1134,20 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt=''
+                      alt=""
                     />
                   </div>
                   <div>
@@ -1156,20 +1156,20 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt=''
+                      alt=""
                     />
                   </div>
                   <div>
@@ -1178,27 +1178,27 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt=''
+                      alt=""
                     />
                   </div>
                 </Carousel>
               ) : null}
             </div>
           </div>
-          <div className='carousel' style={{ flexWrap: 'wrap-reverse' }}>
+          <div className="carousel" style={{ flexWrap: "wrap-reverse" }}>
             <div
               ref={(el) => {
                 project.current[3] = el;
@@ -1206,29 +1206,29 @@ function App() {
             >
               {size.width > 520 ? (
                 <Carousel
-                  easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
+                  easing="cubic-bezier(0.0, 0.0, 0.58, 1.0)"
                   transitionMs={700}
                   itemsToShow={1}
                   pagination={false}
                   //enableAutoPlay
                   //autoPlaySpeed={5500}
                   style={{
-                    backgroundColor: ' black',
+                    backgroundColor: " black",
                     width:
                       size.width > 950
-                        ? '900px'
+                        ? "900px"
                         : size.width > 700
-                        ? '650px'
+                        ? "650px"
                         : size.width > 520
-                        ? '500px'
-                        : '350px',
+                        ? "500px"
+                        : "350px",
                     height:
                       size.width > 950
-                        ? '600px'
+                        ? "600px"
                         : size.width > 700
-                        ? '450px'
-                        : '300px',
-                    margin: '20px',
+                        ? "450px"
+                        : "300px",
+                    margin: "20px",
                   }}
                 >
                   <div>
@@ -1237,20 +1237,20 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt='front'
+                      alt="front"
                     />
                   </div>
                   <div>
@@ -1259,20 +1259,20 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt=''
+                      alt=""
                     />
                   </div>
                   <div>
@@ -1281,27 +1281,27 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt=''
+                      alt=""
                     />
                   </div>
                 </Carousel>
               ) : null}
             </div>
             <div
-              className='introductionField'
+              className="introductionField"
               ref={(el) => {
                 project.current[2] = el;
               }}
@@ -1315,122 +1315,122 @@ function App() {
                 also uses Firebase Authentication. For frontend I have used
                 React Semantic UI framework. Basic fuctionalities of this site
                 are: sending messages, images, changing color themes and more!
-                Works only on desktop and tablet.{' '}
+                Works only on desktop and tablet.{" "}
                 <div
                   style={{
-                    fontSize: '20px',
-                    fontWeight: 'bold',
-                    margin: '10px 0px 30px 0px',
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    margin: "10px 0px 30px 0px",
                   }}
                 >
                   Technologies:
                 </div>
-                <div className='gridSkill'>
-                  <div className='containerSkill2' style={{ width: '55px' }}>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={react} alt='' />
+                <div className="gridSkill">
+                  <div className="containerSkill2" style={{ width: "55px" }}>
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={react} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-35px' }}>
+                      <div className="content2" style={{ marginLeft: "-35px" }}>
                         <h2>React</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2'>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={redux} alt='' />
+                  <div className="containerSkill2">
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={redux} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-35px' }}>
+                      <div className="content2" style={{ marginLeft: "-35px" }}>
                         <h2>Redux</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2'>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={firebase} alt='' style={{ width: '50px' }} />
+                  <div className="containerSkill2">
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={firebase} alt="" style={{ width: "50px" }} />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-40px' }}>
+                      <div className="content2" style={{ marginLeft: "-40px" }}>
                         <h2>Firebase</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2' style={{ width: '85px' }}>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={semanticUI} alt='' />
+                  <div className="containerSkill2" style={{ width: "85px" }}>
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={semanticUI} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-55px' }}>
+                      <div className="content2" style={{ marginLeft: "-55px" }}>
                         <h2>SemanticUI</h2>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
                   Links:
                 </div>
                 <div
                   style={{
-                    display: 'flex',
-                    wrap: 'wrap',
-                    padding: '5px',
-                    justifyContent: 'center',
+                    display: "flex",
+                    wrap: "wrap",
+                    padding: "5px",
+                    justifyContent: "center",
                   }}
                 >
                   <div
-                    className='shadowCopyrightBox'
+                    className="shadowCopyrightBox"
                     style={{
-                      display: 'flex',
-                      wrap: 'wrap',
-                      borderRadius: '50px',
-                      width: '100px',
-                      margin: '5px',
+                      display: "flex",
+                      wrap: "wrap",
+                      borderRadius: "50px",
+                      width: "100px",
+                      margin: "5px",
                     }}
                   >
                     <a
-                      className='a3'
-                      style={{ fontSize: '50px' }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://github.com/nikub444/Online-Chat'
+                      className="a3"
+                      style={{ fontSize: "50px" }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/nikub444/Online-Chat"
                     >
                       <i
-                        className='fab fa-github-square'
-                        aria-hidden='true'
+                        className="fab fa-github-square"
+                        aria-hidden="true"
                       ></i>
                     </a>
                   </div>
                   <div
-                    className='shadowCopyrightBox'
+                    className="shadowCopyrightBox"
                     style={{
-                      display: 'flex',
-                      wrap: 'wrap',
-                      borderRadius: '50px',
-                      width: '100px',
-                      margin: '5px',
+                      display: "flex",
+                      wrap: "wrap",
+                      borderRadius: "50px",
+                      width: "100px",
+                      margin: "5px",
                     }}
                   >
                     <a
-                      className='a3'
+                      className="a3"
                       style={{
-                        fontSize: '50px',
-                        padding: '15px 30px 15px 25px',
+                        fontSize: "50px",
+                        padding: "15px 30px 15px 25px",
                       }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://conector-chat.web.app/'
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://conector-chat.web.app/"
                     >
-                      <i className='fas fa-globe'></i>
+                      <i className="fas fa-globe"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className='carousel'>
+          <div className="carousel">
             <div
-              className='introductionField'
+              className="introductionField"
               ref={(el) => {
                 project.current[4] = el;
               }}
@@ -1442,116 +1442,116 @@ function App() {
                 in styling components and for backend it uses GraphiQL
                 development environment for building queries. Blog can be
                 easilly expanded and changed, because I used transformer-plugin
-                to convert mdx to posts and used global typography.{' '}
+                to convert mdx to posts and used global typography.{" "}
                 <div
                   style={{
-                    fontSize: '20px',
-                    fontWeight: 'bold',
-                    margin: '10px 0px 30px 0px',
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    margin: "10px 0px 30px 0px",
                   }}
                 >
                   Technologies:
                 </div>
-                <div className='gridSkill'>
-                  <div className='containerSkill2' style={{ width: '55px' }}>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={react} alt='' />
+                <div className="gridSkill">
+                  <div className="containerSkill2" style={{ width: "55px" }}>
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={react} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-35px' }}>
+                      <div className="content2" style={{ marginLeft: "-35px" }}>
                         <h2>React</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2'>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={gatsby} alt='' />
+                  <div className="containerSkill2">
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={gatsby} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-40px' }}>
+                      <div className="content2" style={{ marginLeft: "-40px" }}>
                         <h2>Gatsby</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2'>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={graphql} alt='' />
+                  <div className="containerSkill2">
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={graphql} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-40px' }}>
+                      <div className="content2" style={{ marginLeft: "-40px" }}>
                         <h2>GraphQL</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2' style={{ width: '145px' }}>
-                    <div className='card2'>
+                  <div className="containerSkill2" style={{ width: "145px" }}>
+                    <div className="card2">
                       <div
-                        className='imgBox2'
-                        style={{ width: '100px', left: '-50px' }}
+                        className="imgBox2"
+                        style={{ width: "100px", left: "-50px" }}
                       >
-                        <img src={styledComponents} alt='' />
+                        <img src={styledComponents} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-80px' }}>
+                      <div className="content2" style={{ marginLeft: "-80px" }}>
                         <h2>StyledComponents</h2>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
                   Links:
                 </div>
                 <div
                   style={{
-                    display: 'flex',
-                    wrap: 'wrap',
-                    padding: '5px',
-                    justifyContent: 'center',
+                    display: "flex",
+                    wrap: "wrap",
+                    padding: "5px",
+                    justifyContent: "center",
                   }}
                 >
                   <div
-                    className='shadowCopyrightBox'
+                    className="shadowCopyrightBox"
                     style={{
-                      display: 'flex',
-                      wrap: 'wrap',
-                      borderRadius: '50px',
-                      width: '100px',
-                      margin: '5px',
+                      display: "flex",
+                      wrap: "wrap",
+                      borderRadius: "50px",
+                      width: "100px",
+                      margin: "5px",
                     }}
                   >
                     <a
-                      className='a3'
-                      style={{ fontSize: '50px' }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://github.com/nikub444/gatsby-blog'
+                      className="a3"
+                      style={{ fontSize: "50px" }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/nikub444/gatsby-blog"
                     >
                       <i
-                        className='fab fa-github-square'
-                        aria-hidden='true'
+                        className="fab fa-github-square"
+                        aria-hidden="true"
                       ></i>
                     </a>
                   </div>
                   <div
-                    className='shadowCopyrightBox'
+                    className="shadowCopyrightBox"
                     style={{
-                      display: 'flex',
-                      wrap: 'wrap',
-                      borderRadius: '50px',
-                      width: '100px',
-                      margin: '5px',
+                      display: "flex",
+                      wrap: "wrap",
+                      borderRadius: "50px",
+                      width: "100px",
+                      margin: "5px",
                     }}
                   >
                     <a
-                      className='a3'
+                      className="a3"
                       style={{
-                        fontSize: '50px',
-                        padding: '15px 30px 15px 25px',
+                        fontSize: "50px",
+                        padding: "15px 30px 15px 25px",
                       }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://gatsby-blog-project.netlify.app/'
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://gatsby-blog-project.netlify.app/"
                     >
-                      <i className='fas fa-globe'></i>
+                      <i className="fas fa-globe"></i>
                     </a>
                   </div>
                 </div>
@@ -1564,29 +1564,29 @@ function App() {
             >
               {size.width > 520 ? (
                 <Carousel
-                  easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
+                  easing="cubic-bezier(0.0, 0.0, 0.58, 1.0)"
                   transitionMs={700}
                   itemsToShow={1}
                   pagination={false}
                   //enableAutoPlay
                   //autoPlaySpeed={5500}
                   style={{
-                    backgroundColor: ' black',
+                    backgroundColor: " black",
                     width:
                       size.width > 950
-                        ? '900px'
+                        ? "900px"
                         : size.width > 700
-                        ? '650px'
+                        ? "650px"
                         : size.width > 520
-                        ? '500px'
-                        : '350px',
+                        ? "500px"
+                        : "350px",
                     height:
                       size.width > 950
-                        ? '600px'
+                        ? "600px"
                         : size.width > 700
-                        ? '450px'
-                        : '300px',
-                    margin: '20px',
+                        ? "450px"
+                        : "300px",
+                    margin: "20px",
                   }}
                 >
                   <div>
@@ -1595,20 +1595,20 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt='front'
+                      alt="front"
                     />
                   </div>
                   <div>
@@ -1617,20 +1617,20 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt=''
+                      alt=""
                     />
                   </div>
                   <div>
@@ -1639,57 +1639,57 @@ function App() {
                       style={{
                         width:
                           size.width > 950
-                            ? '750px'
+                            ? "750px"
                             : size.width > 700
-                            ? '500px'
+                            ? "500px"
                             : size.width > 520
-                            ? '400px'
-                            : '200px',
+                            ? "400px"
+                            : "200px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
+                            ? "450px"
+                            : "300px",
                       }}
-                      alt=''
+                      alt=""
                     />
                   </div>
                 </Carousel>
               ) : null}
             </div>
-            <div className='carousel' style={{ flexWrap: 'wrap-reverse' }}>
+            <div className="carousel" style={{ flexWrap: "wrap-reverse" }}>
               <div
                 ref={(el) => {
                   project.current[7] = el;
                 }}
               >
-                <div className='test'>
+                <div className="test">
                   {size.width > 520 ? (
                     <Carousel
-                      easing='cubic-bezier(0.0, 0.0, 0.58, 1.0)'
+                      easing="cubic-bezier(0.0, 0.0, 0.58, 1.0)"
                       transitionMs={700}
                       itemsToShow={1}
                       pagination={false}
                       //enableAutoPlay
                       //autoPlaySpeed={5500}
                       style={{
-                        backgroundColor: ' black',
+                        backgroundColor: " black",
                         width:
                           size.width > 950
-                            ? '900px'
+                            ? "900px"
                             : size.width > 700
-                            ? '650px'
+                            ? "650px"
                             : size.width > 520
-                            ? '500px'
-                            : '350px',
+                            ? "500px"
+                            : "350px",
                         height:
                           size.width > 950
-                            ? '600px'
+                            ? "600px"
                             : size.width > 700
-                            ? '450px'
-                            : '300px',
-                        margin: '20px 0px 20px 0px',
+                            ? "450px"
+                            : "300px",
+                        margin: "20px 0px 20px 0px",
                       }}
                     >
                       <div>
@@ -1698,20 +1698,20 @@ function App() {
                           style={{
                             width:
                               size.width > 950
-                                ? '750px'
+                                ? "750px"
                                 : size.width > 700
-                                ? '500px'
+                                ? "500px"
                                 : size.width > 520
-                                ? '380px'
-                                : '200px',
+                                ? "380px"
+                                : "200px",
                             height:
                               size.width > 950
-                                ? '600px'
+                                ? "600px"
                                 : size.width > 700
-                                ? '450px'
-                                : '300px',
+                                ? "450px"
+                                : "300px",
                           }}
-                          alt='front'
+                          alt="front"
                         />
                       </div>
                       <div>
@@ -1720,20 +1720,20 @@ function App() {
                           style={{
                             width:
                               size.width > 950
-                                ? '750px'
+                                ? "750px"
                                 : size.width > 700
-                                ? '500px'
+                                ? "500px"
                                 : size.width > 520
-                                ? '400px'
-                                : '200px',
+                                ? "400px"
+                                : "200px",
                             height:
                               size.width > 950
-                                ? '600px'
+                                ? "600px"
                                 : size.width > 700
-                                ? '450px'
-                                : '300px',
+                                ? "450px"
+                                : "300px",
                           }}
-                          alt=''
+                          alt=""
                         />
                       </div>
                       <div>
@@ -1742,20 +1742,20 @@ function App() {
                           style={{
                             width:
                               size.width > 950
-                                ? '750px'
+                                ? "750px"
                                 : size.width > 700
-                                ? '500px'
+                                ? "500px"
                                 : size.width > 520
-                                ? '380px'
-                                : '200px',
+                                ? "380px"
+                                : "200px",
                             height:
                               size.width > 950
-                                ? '600px'
+                                ? "600px"
                                 : size.width > 700
-                                ? '450px'
-                                : '300px',
+                                ? "450px"
+                                : "300px",
                           }}
-                          alt=''
+                          alt=""
                         />
                       </div>
                       <div>
@@ -1764,20 +1764,20 @@ function App() {
                           style={{
                             width:
                               size.width > 950
-                                ? '750px'
+                                ? "750px"
                                 : size.width > 700
-                                ? '500px'
+                                ? "500px"
                                 : size.width > 520
-                                ? '380px'
-                                : '200px',
+                                ? "380px"
+                                : "200px",
                             height:
                               size.width > 950
-                                ? '600px'
+                                ? "600px"
                                 : size.width > 700
-                                ? '450px'
-                                : '300px',
+                                ? "450px"
+                                : "300px",
                           }}
-                          alt=''
+                          alt=""
                         />
                       </div>
                       <div>
@@ -1786,20 +1786,20 @@ function App() {
                           style={{
                             width:
                               size.width > 950
-                                ? '750px'
+                                ? "750px"
                                 : size.width > 700
-                                ? '500px'
+                                ? "500px"
                                 : size.width > 520
-                                ? '380px'
-                                : '200px',
+                                ? "380px"
+                                : "200px",
                             height:
                               size.width > 950
-                                ? '600px'
+                                ? "600px"
                                 : size.width > 700
-                                ? '450px'
-                                : '300px',
+                                ? "450px"
+                                : "300px",
                           }}
-                          alt=''
+                          alt=""
                         />
                       </div>
                       <div>
@@ -1808,20 +1808,20 @@ function App() {
                           style={{
                             width:
                               size.width > 950
-                                ? '750px'
+                                ? "750px"
                                 : size.width > 700
-                                ? '500px'
+                                ? "500px"
                                 : size.width > 520
-                                ? '380px'
-                                : '200px',
+                                ? "380px"
+                                : "200px",
                             height:
                               size.width > 950
-                                ? '600px'
+                                ? "600px"
                                 : size.width > 700
-                                ? '450px'
-                                : '300px',
+                                ? "450px"
+                                : "300px",
                           }}
-                          alt=''
+                          alt=""
                         />
                       </div>
                       <div>
@@ -1830,20 +1830,20 @@ function App() {
                           style={{
                             width:
                               size.width > 950
-                                ? '750px'
+                                ? "750px"
                                 : size.width > 700
-                                ? '500px'
+                                ? "500px"
                                 : size.width > 520
-                                ? '380px'
-                                : '200px',
+                                ? "380px"
+                                : "200px",
                             height:
                               size.width > 950
-                                ? '600px'
+                                ? "600px"
                                 : size.width > 700
-                                ? '450px'
-                                : '300px',
+                                ? "450px"
+                                : "300px",
                           }}
-                          alt=''
+                          alt=""
                         />
                       </div>
                     </Carousel>
@@ -1851,7 +1851,7 @@ function App() {
                 </div>
               </div>
               <div
-                className='introductionField'
+                className="introductionField"
                 // style={{
                 //   width: size.width > 560 ? '500px' : '100%',
                 //   height: '600px',
@@ -1862,146 +1862,146 @@ function App() {
               >
                 <h2>Social media, JobFinder</h2>
                 <div>
-                  It is user friendly site where you can post or find job offerts,
-                  make your own portfolio and connect with other professionals.
-                  For backend I have used nonrelatioal database MongoDB and
-                  Node.js and Express.js framework. Recently I added github API
-                  feature to display github repositories of users by adding
-                  their github username to profile.
+                  It is user friendly site where you can post or find job
+                  offerts, make your own portfolio and connect with other
+                  professionals. For backend I have used nonrelatioal database
+                  MongoDB and Node.js and Express.js framework. Recently I added
+                  github API feature to display github repositories of users by
+                  adding their github username to profile.
                   <div
                     style={{
-                      fontSize: '20px',
-                      fontWeight: 'bold',
-                      margin: '10px 0px 30px 0px',
+                      fontSize: "20px",
+                      fontWeight: "bold",
+                      margin: "10px 0px 30px 0px",
                     }}
                   >
                     Technologies:
                   </div>
-                  <div className='gridSkill'>
-                    <div className='containerSkill2' style={{ width: '55px' }}>
-                      <div className='card2'>
-                        <div className='imgBox2'>
-                          <img src={react} alt='' />
+                  <div className="gridSkill">
+                    <div className="containerSkill2" style={{ width: "55px" }}>
+                      <div className="card2">
+                        <div className="imgBox2">
+                          <img src={react} alt="" />
                         </div>
                         <div
-                          className='content2'
-                          style={{ marginLeft: '-35px' }}
+                          className="content2"
+                          style={{ marginLeft: "-35px" }}
                         >
                           <h2>React</h2>
                         </div>
                       </div>
                     </div>
-                    <div className='containerSkill2'>
-                      <div className='card2'>
-                        <div className='imgBox2'>
-                          <img src={redux} alt='' />
+                    <div className="containerSkill2">
+                      <div className="card2">
+                        <div className="imgBox2">
+                          <img src={redux} alt="" />
                         </div>
                         <div
-                          className='content2'
-                          style={{ marginLeft: '-40px' }}
+                          className="content2"
+                          style={{ marginLeft: "-40px" }}
                         >
                           <h2>Redux</h2>
                         </div>
                       </div>
                     </div>
-                    <div className='containerSkill2'>
-                      <div className='card2'>
-                        <div className='imgBox2'>
-                          <img src={mongodb} alt='' style={{ width: '50px' }} />
+                    <div className="containerSkill2">
+                      <div className="card2">
+                        <div className="imgBox2">
+                          <img src={mongodb} alt="" style={{ width: "50px" }} />
                         </div>
                         <div
-                          className='content2'
-                          style={{ marginLeft: '-40px' }}
+                          className="content2"
+                          style={{ marginLeft: "-40px" }}
                         >
                           <h2>MongoDB</h2>
                         </div>
                       </div>
                     </div>
-                    <div className='containerSkill2'>
-                      <div className='card2'>
-                        <div className='imgBox2'>
-                          <img src={nodejs} alt='' style={{ width: '50px' }} />
+                    <div className="containerSkill2">
+                      <div className="card2">
+                        <div className="imgBox2">
+                          <img src={nodejs} alt="" style={{ width: "50px" }} />
                         </div>
                         <div
-                          className='content2'
-                          style={{ marginLeft: '-40px' }}
+                          className="content2"
+                          style={{ marginLeft: "-40px" }}
                         >
                           <h2>Node.js</h2>
                         </div>
                       </div>
                     </div>
-                    <div className='containerSkill2' style={{ width: '145px' }}>
-                      <div className='card2'>
+                    <div className="containerSkill2" style={{ width: "145px" }}>
+                      <div className="card2">
                         <div
-                          className='imgBox2'
-                          style={{ width: '100px', left: '-50px' }}
+                          className="imgBox2"
+                          style={{ width: "100px", left: "-50px" }}
                         >
-                          <img src={express} alt='' />
+                          <img src={express} alt="" />
                         </div>
                         <div
-                          className='content2'
-                          style={{ marginLeft: '-50px' }}
+                          className="content2"
+                          style={{ marginLeft: "-50px" }}
                         >
                           <h2>Express.js</h2>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                  <div style={{ fontSize: "20px", fontWeight: "bold" }}>
                     Links:
                   </div>
                   <div
                     style={{
-                      display: 'flex',
-                      wrap: 'wrap',
-                      padding: '5px',
-                      justifyContent: 'center',
+                      display: "flex",
+                      wrap: "wrap",
+                      padding: "5px",
+                      justifyContent: "center",
                     }}
                   >
                     <div
-                      className='shadowCopyrightBox'
+                      className="shadowCopyrightBox"
                       style={{
-                        display: 'flex',
-                        wrap: 'wrap',
-                        borderRadius: '50px',
-                        width: '100px',
-                        margin: '5px',
+                        display: "flex",
+                        wrap: "wrap",
+                        borderRadius: "50px",
+                        width: "100px",
+                        margin: "5px",
                       }}
                     >
                       <a
-                        className='a3'
-                        style={{ fontSize: '50px' }}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href='https://github.com/nikub444/Freelancer'
+                        className="a3"
+                        style={{ fontSize: "50px" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/nikub444/Freelancer"
                       >
                         <i
-                          className='fab fa-github-square'
-                          aria-hidden='true'
+                          className="fab fa-github-square"
+                          aria-hidden="true"
                         ></i>
                       </a>
                     </div>
                     <div
-                      className='shadowCopyrightBox'
+                      className="shadowCopyrightBox"
                       style={{
-                        display: 'flex',
-                        wrap: 'wrap',
-                        borderRadius: '50px',
-                        width: '100px',
-                        margin: '5px',
+                        display: "flex",
+                        wrap: "wrap",
+                        borderRadius: "50px",
+                        width: "100px",
+                        margin: "5px",
                       }}
                     >
                       <a
-                        className='a3'
+                        className="a3"
                         style={{
-                          fontSize: '50px',
-                          padding: '15px 30px 15px 25px',
+                          fontSize: "50px",
+                          padding: "15px 30px 15px 25px",
                         }}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href='https://freelancerjobs.herokuapp.com/'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://freelancerjobs.herokuapp.com/"
                       >
-                        <i className='fas fa-globe'></i>
+                        <i className="fas fa-globe"></i>
                       </a>
                     </div>
                   </div>
@@ -2011,19 +2011,19 @@ function App() {
           </div>
           <div
             style={{
-              backgroundColor: 'black',
-              color: 'white',
-              width: '100%',
-              height: 'auto ',
-              display: 'flex',
-              justifyContent: 'center',
-              paddingTop: '20px',
+              backgroundColor: "black",
+              color: "white",
+              width: "100%",
+              height: "auto ",
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "20px",
             }}
-            className='end'
+            className="end"
           >
             <div
-              className='introductionField'
-              style={{ width: '400px', height: 'auto' }}
+              className="introductionField"
+              style={{ width: "400px", height: "auto" }}
               ref={(el) => {
                 project.current[8] = el;
               }}
@@ -2034,86 +2034,86 @@ function App() {
                 which is using React Native, TypeScript and GraphQL.
                 <div
                   style={{
-                    fontSize: '20px',
-                    fontWeight: 'bold',
-                    margin: '10px 0px 30px 0px',
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    margin: "10px 0px 30px 0px",
                   }}
                 >
                   Technologies:
                 </div>
-                <div className='gridSkill'>
-                  <div className='containerSkill2' style={{ width: '55px' }}>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={react} alt='' />
+                <div className="gridSkill">
+                  <div className="containerSkill2" style={{ width: "55px" }}>
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={react} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-35px' }}>
+                      <div className="content2" style={{ marginLeft: "-35px" }}>
                         <h2>React</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2' style={{ width: '105px' }}>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={reactNative} alt='' />
+                  <div className="containerSkill2" style={{ width: "105px" }}>
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={reactNative} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-55px' }}>
+                      <div className="content2" style={{ marginLeft: "-55px" }}>
                         <h2>ReactNative</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2'>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={graphql} alt='' />
+                  <div className="containerSkill2">
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={graphql} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-40px' }}>
+                      <div className="content2" style={{ marginLeft: "-40px" }}>
                         <h2>GraphQL</h2>
                       </div>
                     </div>
                   </div>
-                  <div className='containerSkill2' style={{ width: '105px' }}>
-                    <div className='card2'>
-                      <div className='imgBox2'>
-                        <img src={typescript} alt='' />
+                  <div className="containerSkill2" style={{ width: "105px" }}>
+                    <div className="card2">
+                      <div className="imgBox2">
+                        <img src={typescript} alt="" />
                       </div>
-                      <div className='content2' style={{ marginLeft: '-50px' }}>
+                      <div className="content2" style={{ marginLeft: "-50px" }}>
                         <h2>Typescript</h2>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
                   Links:
                 </div>
                 <div
                   style={{
-                    display: 'flex',
-                    wrap: 'wrap',
-                    padding: '5px',
-                    justifyContent: 'center',
+                    display: "flex",
+                    wrap: "wrap",
+                    padding: "5px",
+                    justifyContent: "center",
                   }}
                 >
                   <div
-                    className='shadowCopyrightBox'
+                    className="shadowCopyrightBox"
                     style={{
-                      display: 'flex',
-                      wrap: 'wrap',
-                      borderRadius: '50px',
-                      width: '100px',
-                      margin: '5px',
+                      display: "flex",
+                      wrap: "wrap",
+                      borderRadius: "50px",
+                      width: "100px",
+                      margin: "5px",
                     }}
                   >
                     <a
-                      className='a3'
-                      style={{ fontSize: '50px' }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://github.com/nikub444/Fulstack-App'
+                      className="a3"
+                      style={{ fontSize: "50px" }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/nikub444/Fulstack-App"
                     >
                       <i
-                        className='fab fa-github-square'
-                        aria-hidden='true'
+                        className="fab fa-github-square"
+                        aria-hidden="true"
                       ></i>
                     </a>
                   </div>
@@ -2125,30 +2125,30 @@ function App() {
 
         <div
           style={{
-            backgroundColor: 'black',
+            backgroundColor: "black",
 
-            display: 'flex',
-            flexWrap: 'wrap',
-            width: '100%',
-            justifyContent: 'center',
+            display: "flex",
+            flexWrap: "wrap",
+            width: "100%",
+            justifyContent: "center",
           }}
         >
           <section
-            className='sectionSkills'
+            className="sectionSkills"
             ref={(el) => {
               theme.current[4] = el;
             }}
           >
-            <div className='skillsDiv'>
-              <h2 className='skills' id='contact'>
-                <span className='skillsSpan'>C</span>ontact
+            <div className="skillsDiv">
+              <h2 className="skills" id="contact">
+                <span className="skillsSpan">C</span>ontact
               </h2>
             </div>
           </section>
-          <div className='shadowCopyright'></div>
+          <div className="shadowCopyright"></div>
           <div
-            className='copyright'
-            style={{ width: '100%', color: 'white', padding: '20px' }}
+            className="copyright"
+            style={{ width: "100%", color: "white", padding: "20px" }}
           >
             <h1>You can contact me by email:</h1>
             <h2>jniedzwiecki444@gmail.com</h2>
@@ -2156,81 +2156,81 @@ function App() {
           </div>
           <ul
             style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
           >
             <li
-              className='shadowCopyrightBox'
+              className="shadowCopyrightBox"
               style={{
-                backgroundColor: 'white',
-                padding: '30px',
-                borderRadius: '50px',
-                height: '120px',
+                backgroundColor: "white",
+                padding: "30px",
+                borderRadius: "50px",
+                height: "120px",
               }}
               ref={(el) => {
                 socialMedia.current[0] = el;
               }}
             >
               <a
-                className='a1'
-                style={{ padding: '2px' }}
-                rel='noopener noreferrer'
-                target='_blank'
-                href='https://www.linkedin.com/in/jakub-nied%C5%BAwiecki-22773b1b7/'
+                className="a1"
+                style={{ padding: "2px" }}
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/in/jakub-nied%C5%BAwiecki-22773b1b7/"
               >
-                <i className='fab fa-linkedin' aria-hidden='true'></i>
+                <i className="fab fa-linkedin" aria-hidden="true"></i>
               </a>
             </li>
 
             <li
-              className='shadowCopyrightBox'
+              className="shadowCopyrightBox"
               style={{
-                backgroundColor: 'white',
-                padding: '30px',
-                borderRadius: '50px',
-                height: '120px',
+                backgroundColor: "white",
+                padding: "30px",
+                borderRadius: "50px",
+                height: "120px",
               }}
               ref={(el) => {
                 socialMedia.current[1] = el;
               }}
             >
               <a
-                className='a2'
-                style={{ padding: '2px' }}
-                target='_blank'
-                rel='noopener noreferrer'
-                href='https://www.facebook.com/kuba.niedzwiecki.7/'
+                className="a2"
+                style={{ padding: "2px" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/kuba.niedzwiecki.7/"
               >
-                <i className='fab fa-facebook-square' aria-hidden='true'></i>
+                <i className="fab fa-facebook-square" aria-hidden="true"></i>
               </a>
             </li>
 
             <li
-              className='shadowCopyrightBox'
+              className="shadowCopyrightBox"
               style={{
-                backgroundColor: 'white',
-                padding: '30px',
-                borderRadius: '50px',
-                height: '120px',
+                backgroundColor: "white",
+                padding: "30px",
+                borderRadius: "50px",
+                height: "120px",
               }}
               ref={(el) => {
                 socialMedia.current[2] = el;
               }}
             >
               <a
-                className='a3'
-                style={{ padding: '2px' }}
-                target='_blank'
-                rel='noopener noreferrer'
-                href='https://github.com/nikub444'
+                className="a3"
+                style={{ padding: "2px" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/nikub444"
               >
-                <i className='fab fa-github-square' aria-hidden='true'></i>
+                <i className="fab fa-github-square" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
-          <div style={{ width: '100%', color: 'white', padding: '20px' }}>
+          <div style={{ width: "100%", color: "white", padding: "20px" }}>
             © 2020 Copyright: Jakub Niedźwiecki.
           </div>
         </div>
@@ -2258,13 +2258,13 @@ function useWindowSize() {
     }
 
     // Add event listener
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Call handler right away so state gets updated with initial window size
     handleResize();
 
     // Remove event listener on cleanup
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []); // Empty array ensures that effect is only run on mount
 
   return windowSize;
