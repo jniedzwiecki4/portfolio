@@ -21,7 +21,7 @@ import graphql from "./images/GraphQL.png";
 import gatsby from "./images/gatsby.png";
 import next from "./images/next.png";
 import gsapLogo from "./images/gsap.png";
-import neonPortrait from "./images/testPortraitchybafinalXD.jpg";
+import neonPortrait from "./images/portrait2.jpg";
 import front from "./images/projects/vdo/Front.png";
 import shop from "./images/projects/vdo/Shop.png";
 import contact from "./images/projects/vdo/Contact.png";
@@ -475,7 +475,7 @@ function App() {
               <p>
                 I am student of Computer Science and Econometrics at AGH
                 Uniersity of Science and Technology. Few years ago I wanted to
-                start a blog about trading automation in the stock market,
+                start a blog about automation trading in the stock market,
                 because at that time I was learning and writing in MQL4 language
                 (which is very similar to C++ or C) simple trading bots. I
                 decided to make it in Wordpress, but I was not content of my
@@ -490,6 +490,16 @@ function App() {
                 2019 I have been constantly expanding my knowledge in the field
                 of back-end and front-end technologies. My goal is to become a
                 full-stack developer in a future.{" "}
+              </p>
+              <p>
+                I have more than 1 year experience in commercial projects as a
+                software developer. I am tools analyst at Capgemini and
+                full-stack developer at Devutnia. I was involved in
+                international projects. My biggest adventure was data
+                transformation project for one of the biggest airplane company.
+                That experience taught me how to conduct conversation with
+                clients and contribute software engineering expertise, from
+                requirements through deployment.
               </p>
               <p>
                 Beside, studying at university and writing websites I am
@@ -811,7 +821,7 @@ function App() {
                   I know how gatsby is building blocks and how to deal with
                   plugins such as transformer and source-filesystem. I can
                   programmatically create pages with slugs. Moreover I have been
-                  using GraphiQL development environment and know how gatsby is
+                  using GraphQL development environment and know how gatsby is
                   storing data.
                 </p>
               </div>
@@ -850,13 +860,11 @@ function App() {
                 <img src={next} alt="" />
               </div>
               <div className="content">
-                <h2>Gatsby</h2>
+                <h2>Next.js</h2>
                 <p>
-                  I know how gatsby is building blocks and how to deal with
-                  plugins such as transformer and source-filesystem. I can
-                  programmatically create pages with slugs. Moreover I have been
-                  using GraphiQL development environment and know how gatsby is
-                  storing data.
+                  I know advantages of SSR (Server Side Rendering), how to
+                  migrate React project to Next.js and how to integrate rich
+                  snippets in website.
                 </p>
               </div>
             </div>
@@ -2051,96 +2059,13 @@ function App() {
                 project.current[8] = el;
               }}
             >
-              <h2>Fullstack Apllication</h2>
-              <div>
-                I am currently working on application similiar to Booking.com
-                which is using React Native, TypeScript and GraphQL.
-                <div
-                  style={{
-                    fontSize: "20px",
-                    fontWeight: "bold",
-                    margin: "10px 0px 30px 0px",
-                  }}
-                >
-                  Technologies:
-                </div>
-                <div className="gridSkill">
-                  <div className="containerSkill2" style={{ width: "55px" }}>
-                    <div className="card2">
-                      <div className="imgBox2">
-                        <img src={react} alt="" />
-                      </div>
-                      <div className="content2" style={{ marginLeft: "-35px" }}>
-                        <h2>React</h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="containerSkill2" style={{ width: "105px" }}>
-                    <div className="card2">
-                      <div className="imgBox2">
-                        <img src={reactNative} alt="" />
-                      </div>
-                      <div className="content2" style={{ marginLeft: "-55px" }}>
-                        <h2>ReactNative</h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="containerSkill2">
-                    <div className="card2">
-                      <div className="imgBox2">
-                        <img src={graphql} alt="" />
-                      </div>
-                      <div className="content2" style={{ marginLeft: "-40px" }}>
-                        <h2>GraphQL</h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="containerSkill2" style={{ width: "105px" }}>
-                    <div className="card2">
-                      <div className="imgBox2">
-                        <img src={typescript} alt="" />
-                      </div>
-                      <div className="content2" style={{ marginLeft: "-50px" }}>
-                        <h2>Typescript</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-                  Links:
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    wrap: "wrap",
-                    padding: "5px",
-                    justifyContent: "center",
-                  }}
-                >
-                  <div
-                    className="shadowCopyrightBox"
-                    style={{
-                      display: "flex",
-                      wrap: "wrap",
-                      borderRadius: "50px",
-                      width: "100px",
-                      margin: "5px",
-                    }}
-                  >
-                    <a
-                      className="a3"
-                      style={{ fontSize: "50px" }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://github.com/nikub444/Fulstack-App"
-                    >
-                      <i
-                        className="fab fa-github-square"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </div>
-                </div>
+              <h2>Current scope of interest</h2>
+              <div style={{ padding: "20px" }}>
+                I am currently working on my algo trading project for my BA
+                dissertation. I want to build it in MERN stack with
+                microservices built in python. At this time I am broadening my
+                knowledge in Docker and AWS and developing commercial apps at my
+                workplace.
               </div>
             </div>
           </div>
